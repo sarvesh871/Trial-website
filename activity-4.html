@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 4: Financial Projections for Scaling | ScaleWise</title>
+  <meta name="description" content="Exercise 4: Financial Projections for Scaling. Construct unit economics, dynamic break-even SVG charts, 5-year P&L models, and sensitivity analyses.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/activities.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="ScaleWise Home">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">ScaleWise</span>
+          <span class="brand-sub">Sustainability Lab</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="founder-brief.html">Founder's Brief</a></li>
+          <li class="nav-item"><a href="hub.html" class="active">Activity Hub</a></li>
+          <li class="nav-item"><a href="toolkit.html">Toolkit</a></li>
+          <li class="nav-item"><a href="dashboard.html">Growth Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="dashboard.html" class="nav-progress-pill" title="View your simulation progress">
+          <span class="progress-pill-dot"></span>
+          <span class="nav-progress-text">0/7 Done</span>
+          <span class="nav-progress-percent" style="color:var(--color-slate-light); font-weight:400; font-size:0.75rem;">(0%)</span>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="founder-brief.html">Founder's Brief</a></li>
+      <li><a href="hub.html" class="active">Activity Hub (7 Challenges)</a></li>
+      <li><a href="toolkit.html">Sustainability Toolkit</a></li>
+      <li><a href="dashboard.html">Growth Dashboard</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Activity Top Banner -->
+    <section class="activity-header-bar">
+      <div class="container">
+        <div class="activity-header-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="hub.html">Activity Hub</a>
+          <span>/</span>
+          <span>Exercise 4</span>
+        </div>
+        <div class="activity-headline-wrap">
+          <div class="activity-headline-left">
+            <span class="badge badge-mint" style="margin-bottom:8px;">Financial Modeling & Economics</span>
+            <h1>Exercise 4: Financial Projections for Scaling</h1>
+            <p>
+              Build a multi-year financial model demonstrating first-principles unit economics, break-even thresholds at scale, capital requirements, and sensitivity scenarios.
+            </p>
+          </div>
+          <div class="activity-header-actions">
+            <button class="btn btn-outline" data-toggle-complete="activity-4">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Mark as Completed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sub-navigation -->
+    <div class="activity-nav-subbar">
+      <div class="container">
+        <ul class="subbar-nav-list">
+          <li><a href="#simulation" class="active">Interactive Break-Even Model</a></li>
+          <li><a href="#objective">Objective & Outcomes</a></li>
+          <li><a href="#theory">Background Theory</a></li>
+          <li><a href="#procedure">Procedure & Tasks</a></li>
+          <li><a href="#model5yr">5-Year Model & Annexure D</a></li>
+          <li><a href="#evaluation">Evaluation Criteria</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container workspace-layout">
+
+      <!-- INTERACTIVE SIMULATION: FINANCIAL EXPLORATION & DYNAMIC BREAK-EVEN CHART -->
+      <section id="simulation" class="interactive-simulation-box">
+        <span class="simulation-badge">Interactive Simulation 04</span>
+        <div class="simulation-header">
+          <h3>Interactive Unit Economics & Break-Even Chart Calculator</h3>
+          <p>
+            Adjust the sliders below to explore how changes in unit selling price, variable BOM cost, annual fixed overhead, sales volume, and customer acquisition cost dynamically alter Solvanta's contribution margin, break-even point, and EBITDA trajectory.
+          </p>
+        </div>
+
+        <div class="callout callout-fictional" style="margin-bottom:var(--space-xl);">
+          <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <div>
+            <strong>Illustrative Academic Financials:</strong>
+            All financial values presented in this simulator are educational approximations and do not represent verified commercial performance. This interactive tool provides visual intuition alongside the formal 5-year spreadsheet deliverable.
+          </div>
+        </div>
+
+        <!-- 2-Column Calculator Layout -->
+        <div class="calc-layout-grid">
+          <!-- Inputs Column -->
+          <div class="calc-inputs-panel">
+            <h4 style="font-size:1.05rem; margin-bottom:var(--space-md); color:var(--color-forest-dark);">
+              Interactive Model Drivers
+            </h4>
+
+            <!-- Input 1: Price -->
+            <div class="calc-input-group">
+              <div class="calc-input-header">
+                <label class="calc-input-label" for="input-price">Unit Selling Price ($)</label>
+                <span class="calc-input-value-badge" id="val-price">$4,500</span>
+              </div>
+              <input type="range" id="input-price" class="calc-range-slider" min="3000" max="7000" step="100" value="4500">
+            </div>
+
+            <!-- Input 2: Variable Cost -->
+            <div class="calc-input-group">
+              <div class="calc-input-header">
+                <label class="calc-input-label" for="input-varcost">Unit Variable Cost ($)</label>
+                <span class="calc-input-value-badge" id="val-varcost">$2,600</span>
+              </div>
+              <input type="range" id="input-varcost" class="calc-range-slider" min="1500" max="4000" step="50" value="2600">
+            </div>
+
+            <!-- Input 3: Fixed Overhead -->
+            <div class="calc-input-group">
+              <div class="calc-input-header">
+                <label class="calc-input-label" for="input-fixedcost">Annual Fixed Costs ($)</label>
+                <span class="calc-input-value-badge" id="val-fixedcost">$1,200,000</span>
+              </div>
+              <input type="range" id="input-fixedcost" class="calc-range-slider" min="400000" max="3000000" step="50000" value="1200000">
+            </div>
+
+            <!-- Input 4: Target Volume -->
+            <div class="calc-input-group">
+              <div class="calc-input-header">
+                <label class="calc-input-label" for="input-volume">Target Unit Volume / Yr</label>
+                <span class="calc-input-value-badge" id="val-volume">1,200 units</span>
+              </div>
+              <input type="range" id="input-volume" class="calc-range-slider" min="200" max="4000" step="50" value="1200">
+            </div>
+
+            <!-- Input 5: CAC -->
+            <div class="calc-input-group">
+              <div class="calc-input-header">
+                <label class="calc-input-label" for="input-cac">Customer Acquisition Cost (CAC)</label>
+                <span class="calc-input-value-badge" id="val-cac">$1,200</span>
+              </div>
+              <input type="range" id="input-cac" class="calc-range-slider" min="400" max="2500" step="50" value="1200">
+            </div>
+
+            <!-- Input 6: LTV -->
+            <div class="calc-input-group">
+              <div class="calc-input-header">
+                <label class="calc-input-label" for="input-ltv">Customer Lifetime Value (LTV)</label>
+                <span class="calc-input-value-badge" id="val-ltv">$9,800</span>
+              </div>
+              <input type="range" id="input-ltv" class="calc-range-slider" min="4500" max="18000" step="100" value="9800">
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--color-slate-light); margin-top:var(--space-md); text-align:center;">
+              Drag sliders to recalculate break-even & chart in real time.
+            </div>
+          </div>
+
+          <!-- Outputs & Interactive Chart Column -->
+          <div>
+            <!-- Live Calculated Metric Cards -->
+            <div class="calc-summary-cards">
+              <div class="calc-kpi-card">
+                <span class="calc-kpi-val" id="kpi-cm">$1,900</span>
+                <span class="calc-kpi-lbl">Contribution Margin / Unit</span>
+              </div>
+              <div class="calc-kpi-card">
+                <span class="calc-kpi-val" id="kpi-cm-ratio">42.2%</span>
+                <span class="calc-kpi-lbl">Contribution Margin Ratio</span>
+              </div>
+              <div class="calc-kpi-card">
+                <span class="calc-kpi-val" id="kpi-be-units">632 units</span>
+                <span class="calc-kpi-lbl">Break-Even Volume</span>
+              </div>
+              <div class="calc-kpi-card">
+                <span class="calc-kpi-val" id="kpi-be-revenue">$2,844,000</span>
+                <span class="calc-kpi-lbl">Break-Even Revenue</span>
+              </div>
+              <div class="calc-kpi-card">
+                <span class="calc-kpi-val" id="kpi-ebitda" style="color:var(--color-mint);">+$1,080,000</span>
+                <span class="calc-kpi-lbl">Projected Annual EBITDA</span>
+              </div>
+              <div class="calc-kpi-card">
+                <span class="calc-kpi-val" id="kpi-ltv-cac" style="color:var(--color-mint);">8.2x</span>
+                <span class="calc-kpi-lbl">LTV : CAC Ratio (Target &ge; 3.0x)</span>
+              </div>
+            </div>
+
+            <!-- Dynamic SVG Break-Even Chart Box -->
+            <div class="breakeven-chart-box">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <h4 style="margin:0; font-size:1rem; color:var(--color-forest-dark);">
+                  Dynamic Break-Even Cross-Over Chart
+                </h4>
+                <div style="display:flex; gap:12px; font-size:0.6875rem; font-weight:600;">
+                  <span style="color:#718096;">- - Fixed Cost</span>
+                  <span style="color:#D97706;">— Total Cost</span>
+                  <span style="color:#10B981;">— Total Revenue</span>
+                </div>
+              </div>
+
+              <!-- SVG Canvas generated dynamically by activities.js -->
+              <svg id="breakeven-chart-svg" class="breakeven-svg-chart" viewBox="0 0 640 300"></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sensitivity Analysis Table (±20% Price vs ±20% CAC) -->
+        <h4 style="font-size:1.15rem; color:var(--color-forest-dark); margin-top:var(--space-xl); margin-bottom:var(--space-xs);">
+          Sensitivity Analysis: Break-Even Units & Timing (±20% Price vs. ±20% CAC)
+        </h4>
+        <p style="font-size:0.8125rem; color:var(--color-slate); margin-bottom:var(--space-sm);">
+          Simulating how shifts in market pricing power and customer acquisition efficiency accelerate or delay break-even viability:
+        </p>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Pricing Scenario</th>
+                <th>-20% CAC ($960)</th>
+                <th>Baseline CAC ($1,200)</th>
+                <th>+20% CAC ($1,440)</th>
+              </tr>
+            </thead>
+            <tbody id="sensitivity-tbody">
+              <!-- Dynamically populated by activities.js -->
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+
+      <!-- ACADEMIC SECTION 1: OBJECTIVE & OUTCOMES -->
+      <section id="objective" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">1</span>
+          <span>Objective & Learning Outcomes</span>
+        </h3>
+        <p><strong>Objective:</strong> To build a multi-year financial model for a startup that demonstrates unit economics, the break-even point at scale, and the capital requirements needed to reach that scale.</p>
+        
+        <h4 style="margin-top:var(--space-md); margin-bottom:var(--space-xs); font-size:1.05rem;">Learning Outcomes</h4>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px;">
+          <li>Construct unit economics (CAC, LTV, contribution margin) for a chosen venture.</li>
+          <li>Build a 3–5 year revenue, cost, and cash-flow projection.</li>
+          <li>Determine the break-even volume/timeline and the associated capital requirement.</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 2: BACKGROUND / THEORY -->
+      <section id="theory" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">2</span>
+          <span>Background / Theory</span>
+        </h3>
+        <p>
+          Investors and founders alike evaluate scalability through the lens of unit economics — does each additional unit sold or customer acquired generate more value than it costs? This exercise builds a financial model from first principles: unit-level revenue and cost, scaled to company-level projections, to determine when and at what capital cost the venture becomes self-sustaining.
+        </p>
+        <p>
+          The <strong>Contribution Margin Method</strong> for break-even analysis isolates fixed overhead from per-unit variable costs:
+        </p>
+        <div class="toolkit-formula-box">
+          Contribution Margin (CM) = Unit Price (P) &minus; Unit Variable Cost (VC)<br>
+          Break-Even Volume (Units) = Total Fixed Overhead &divide; CM<br>
+          Break-Even Revenue = Break-Even Volume &times; Unit Price
+        </div>
+      </section>
+
+      <!-- ACADEMIC SECTION 3: MATERIALS REQUIRED -->
+      <section class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">3</span>
+          <span>Materials / Resources Required</span>
+        </h3>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px;">
+          <li><strong>Spreadsheet software:</strong> Microsoft Excel or Google Sheets.</li>
+          <li><strong>Financial modelling template:</strong> Prescribed in <em>Annexure D</em>.</li>
+          <li><strong>Assumed/researched cost & pricing data:</strong> For the chosen product category (e.g. Solvanta PowerBlock™).</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 4: PROCEDURE / TASKS -->
+      <section id="procedure" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">4</span>
+          <span>Procedure / Tasks</span>
+        </h3>
+        <ol class="task-list">
+          <li class="task-item">
+            <span class="task-num-circle">1</span>
+            <div class="task-content">
+              <strong>Define product & volume:</strong>
+              Define the product/service, pricing, and target customer volume by year for years 1 through 5.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">2</span>
+            <div class="task-content">
+              <strong>Compute unit economics:</strong>
+              Customer Acquisition Cost (CAC), Customer Lifetime Value (LTV), contribution margin per unit, and the LTV:CAC ratio.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">3</span>
+            <div class="task-content">
+              <strong>Build cost structure:</strong>
+              Separating fixed costs (facility lease, salaried engineering/admin staff, equipment depreciation) from variable costs (materials BOM, direct contract assembly labor, logistics per unit).
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">4</span>
+            <div class="task-content">
+              <strong>Project annual P&L:</strong>
+              Project revenue, gross margin, operating expenses (OpEx), and EBITDA for each year.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">5</span>
+            <div class="task-content">
+              <strong>Identify break-even point:</strong>
+              In both units sold and elapsed time, showing the calculation method (contribution margin approach).
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">6</span>
+            <div class="task-content">
+              <strong>Estimate total capital requirement:</strong>
+              Calculate capital required to reach break-even (covering cumulative negative cash flow) and propose a balanced funding structure (equity / debt / non-dilutive grants).
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">7</span>
+            <div class="task-content">
+              <strong>Build sensitivity table:</strong>
+              A simple sensitivity table showing the impact of &plusmn;20% price and &plusmn;20% CAC on break-even timing.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ACADEMIC SECTION 5: DELIVERABLES & ANNEXURE D -->
+      <section id="model5yr" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">5</span>
+          <span>Deliverables / Submission (Annexure D Model)</span>
+        </h3>
+        
+        <p>Your lab submission must include:</p>
+        <ul style="padding-left:20px; color:var(--color-slate); margin-bottom:var(--space-md); display:flex; flex-direction:column; gap:4px;">
+          <li>Unit economics summary (CAC, LTV, contribution margin, LTV:CAC).</li>
+          <li>5-year P&L and cash-flow projection spreadsheet.</li>
+          <li>Break-even analysis with complete supporting calculations.</li>
+          <li>Capital requirement estimate and funding structure recommendation.</li>
+          <li>Sensitivity analysis table.</li>
+        </ul>
+
+        <h4 style="margin:var(--space-lg) 0 var(--space-xs); font-size:1.1rem; color:var(--color-forest-dark);">
+          Annexure D: Solvanta 5-Year Financial Projection Model ($ USD)
+        </h4>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Financial Metric</th>
+                <th>Year 1 (Pilot)</th>
+                <th>Year 2 (Scale-Up)</th>
+                <th>Year 3 (Break-Even)</th>
+                <th>Year 4 (Expansion)</th>
+                <th>Year 5 (Mass Scale)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Units Sold</strong></td>
+                <td>350 units</td>
+                <td>1,200 units</td>
+                <td>3,200 units</td>
+                <td>8,500 units</td>
+                <td>22,000 units</td>
+              </tr>
+              <tr>
+                <td><strong>Hardware Revenue</strong> ($4.5k/u)</td>
+                <td>$1,575,000</td>
+                <td>$5,400,000</td>
+                <td>$14,400,000</td>
+                <td>$38,250,000</td>
+                <td>$99,000,000</td>
+              </tr>
+              <tr>
+                <td><strong>SaaS Telemetry ARR</strong> ($35/mo)</td>
+                <td>$63,000</td>
+                <td>$378,000</td>
+                <td>$1,386,000</td>
+                <td>$4,410,000</td>
+                <td>$12,600,000</td>
+              </tr>
+              <tr>
+                <td><strong>Total Revenue</strong></td>
+                <td><strong>$1,638,000</strong></td>
+                <td><strong>$5,778,000</strong></td>
+                <td><strong>$15,786,000</strong></td>
+                <td><strong>$42,660,000</strong></td>
+                <td><strong>$111,600,000</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Cost of Goods Sold (COGS)</strong></td>
+                <td>($910,000)</td>
+                <td>($2,880,000)</td>
+                <td>($7,040,000)</td>
+                <td>($17,850,000)</td>
+                <td>($44,000,000)</td>
+              </tr>
+              <tr>
+                <td><strong>Gross Margin</strong></td>
+                <td>$728,000 (44.4%)</td>
+                <td>$2,898,000 (50.2%)</td>
+                <td>$8,746,000 (55.4%)</td>
+                <td>$24,810,000 (58.2%)</td>
+                <td>$67,600,000 (60.6%)</td>
+              </tr>
+              <tr>
+                <td><strong>Operating Expenses (OpEx)</strong></td>
+                <td>($1,450,000)</td>
+                <td>($2,400,000)</td>
+                <td>($4,800,000)</td>
+                <td>($9,500,000)</td>
+                <td>($18,200,000)</td>
+              </tr>
+              <tr>
+                <td><strong>EBITDA Operating Profit</strong></td>
+                <td><span style="color:var(--color-red); font-weight:700;">($722,000)</span></td>
+                <td><span style="color:var(--color-mint); font-weight:700;">+$498,000</span></td>
+                <td><span style="color:var(--color-mint); font-weight:700;">+$3,946,000</span></td>
+                <td><span style="color:var(--color-mint); font-weight:700;">+$15,310,000</span></td>
+                <td><span style="color:var(--color-mint); font-weight:700;">+$49,400,000</span></td>
+              </tr>
+              <tr>
+                <td><strong>Cumulative Net Cash Flow</strong></td>
+                <td><span style="color:var(--color-red);">($1,120,000)</span></td>
+                <td><span style="color:var(--color-red);">($820,000)</span></td>
+                <td><span style="color:var(--color-mint); font-weight:700;">+$2,150,000</span></td>
+                <td><span style="color:var(--color-mint); font-weight:700;">+$14,200,000</span></td>
+                <td><span style="color:var(--color-mint); font-weight:700;">+$52,800,000</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="background:var(--color-sage-tint); border:1px solid var(--color-sage-subtle); border-radius:var(--radius-md); padding:var(--space-md); margin-top:var(--space-md);">
+          <strong style="color:var(--color-forest-dark);">Capital Requirement & Funding Recommendation:</strong>
+          <p style="font-size:0.875rem; color:var(--color-charcoal); margin-top:4px;">
+            Cumulative maximum negative cash trough is <strong>$1.94M</strong> at month 16. To ensure a 6-month safety buffer, total capital requirement is <strong>$2.6M</strong>. Recommended structure: <strong>$1.5M Seed/Series A equity</strong> (founders retain 68% control), <strong>$600k revolving working capital facility</strong> for battery cell procurement, and <strong>$500k clean-tech non-dilutive grant</strong> for circular take-back R&D.
+          </p>
+        </div>
+      </section>
+
+      <!-- ACADEMIC SECTION 6: EVALUATION CRITERIA -->
+      <section id="evaluation" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">6</span>
+          <span>Evaluation Criteria (Total 10 Marks)</span>
+        </h3>
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Marks</th>
+                <th>Evaluation Standard</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Conceptual Clarity</strong></td>
+                <td>2.0 Marks</td>
+                <td>Correct application of contribution margin break-even logic and separation of fixed vs variable costs.</td>
+              </tr>
+              <tr>
+                <td><strong>Analytical Depth</strong></td>
+                <td>2.0 Marks</td>
+                <td>Rigorous multi-year modeling, realistic COGS progression with economies of scale, and valid LTV:CAC math.</td>
+              </tr>
+              <tr>
+                <td><strong>Feasibility & Practicality</strong></td>
+                <td>2.0 Marks</td>
+                <td>Practicality of working capital projections, cash-trough calculations, and recommended funding structure.</td>
+              </tr>
+              <tr>
+                <td><strong>Presentation & Documentation</strong></td>
+                <td>2.0 Marks</td>
+                <td>Clean financial statement formatting, explicit calculation methodologies, and sensitivity matrix presentation.</td>
+              </tr>
+              <tr>
+                <td><strong>Timeliness</strong></td>
+                <td>2.0 Marks</td>
+                <td>Punctual lab submission conforming to all course instructions.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Activity Pagination -->
+      <div class="activity-pagination">
+        <a href="activity-3.html" class="pagination-btn">
+          <span class="pagination-label">Previous Challenge</span>
+          <span class="pagination-title">← Exercise 3: Supply Chain Plan</span>
+        </a>
+
+        <div style="text-align:center;">
+          <span class="badge badge-academic">Exercise 4 of 7</span>
+        </div>
+
+        <a href="activity-5.html" class="pagination-btn" style="text-align:right;">
+          <span class="pagination-label">Next Challenge</span>
+          <span class="pagination-title">Exercise 5: Risk Roadmap →</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="academic-attribution">
+          <strong>Academic Simulation Notice:</strong> ScaleWise is an educational simulation based on the <em>Startup Sustainability & Scalability Lab</em> curriculum.
+        </div>
+        <div>&copy; ScaleWise Lab Simulation.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/activities.js"></script>
+</body>
+</html>

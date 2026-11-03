@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScaleWise — Startup Sustainability & Scalability Simulation</title>
+  <meta name="description" content="An interactive startup sustainability and scalability simulation. Step into the shoes of a clean-tech founder tackling seven rigorous startup scaling exercises.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/activities.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="ScaleWise Home">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">ScaleWise</span>
+          <span class="brand-sub">Sustainability Lab</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="active">Home</a></li>
+          <li class="nav-item"><a href="founder-brief.html">Founder's Brief</a></li>
+          <li class="nav-item"><a href="hub.html">Activity Hub</a></li>
+          <li class="nav-item"><a href="toolkit.html">Toolkit</a></li>
+          <li class="nav-item"><a href="dashboard.html">Growth Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="dashboard.html" class="nav-progress-pill" title="View your simulation progress">
+          <span class="progress-pill-dot"></span>
+          <span class="nav-progress-text">0/7 Done</span>
+          <span class="nav-progress-percent" style="color:var(--color-slate-light); font-weight:400; font-size:0.75rem;">(0%)</span>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="founder-brief.html">Founder's Brief</a></li>
+      <li><a href="hub.html">Activity Hub (7 Challenges)</a></li>
+      <li><a href="toolkit.html">Sustainability Toolkit</a></li>
+      <li><a href="dashboard.html">Growth Dashboard</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="badge badge-mint">Interactive Founder Simulation</span>
+            <span class="badge badge-academic" style="margin-left: 8px;">Academic Lab Curriculum</span>
+          </div>
+
+          <h1 class="hero-title">
+            Build Better.<br>
+            Scale Smarter.<br>
+            <span class="highlight">Grow Sustainably.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Most startups fail when scaling because they treat sustainability as an afterthought. 
+            Step into the role of a founder navigating a high-growth climate-tech enterprise through seven 
+            rigorous real-world engineering, financial, and operational challenges.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="hub.html" class="btn btn-primary btn-lg">
+              <span>Begin Your Journey</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="founder-brief.html" class="btn btn-secondary btn-lg">Read Founder's Brief</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">7</span>
+              <span class="hero-stat-label">Rigorous Lab Activities</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">3</span>
+              <span class="hero-stat-label">Triple Bottom Line Pillars</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">100%</span>
+              <span class="hero-stat-label">Client-Side Interactive</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Preview Card -->
+        <div class="hero-visual-card">
+          <div class="hero-visual-header">
+            <div class="hero-visual-venture">
+              <div class="venture-logo-mini">SP</div>
+              <div>
+                <div class="venture-title-mini">Solvanta Energy Systems</div>
+                <div style="font-size:0.6875rem; color:var(--color-slate);">Modular Solar & Battery Storage</div>
+              </div>
+            </div>
+            <span class="venture-status-pill">Seed Stage Scale-Up</span>
+          </div>
+
+          <p style="font-size:0.8125rem; color:var(--color-slate); margin-bottom:12px;">
+            <strong>Simulation Objective:</strong> Guide Solvanta from a 10-person pilot workshop producing 35 units/month to an automated, ESG-audited regional manufacturer deploying 25,000 units/year without exceeding planetary or capital boundaries.
+          </p>
+
+          <div class="growth-flow-preview">
+            <div class="flow-step-item">
+              <div class="flow-step-icon">01</div>
+              <div class="flow-step-content">
+                <div class="flow-step-name">Baseline Sustainability Audit</div>
+                <div class="flow-step-meta">Triple Bottom Line diagnostic & gap table</div>
+              </div>
+              <span class="flow-step-status">Exercise 1</span>
+            </div>
+
+            <div class="flow-step-item">
+              <div class="flow-step-icon">02</div>
+              <div class="flow-step-content">
+                <div class="flow-step-name">Business Model Decoupling</div>
+                <div class="flow-step-meta">Automation, outsourcing & platform BMC</div>
+              </div>
+              <span class="flow-step-status">Exercise 2</span>
+            </div>
+
+            <div class="flow-step-item">
+              <div class="flow-step-icon">03</div>
+              <div class="flow-step-content">
+                <div class="flow-step-name">Operations & Supply Scaling</div>
+                <div class="flow-step-meta">Pilot → Scale-up → Mass production roadmap</div>
+              </div>
+              <span class="flow-step-status">Exercise 3</span>
+            </div>
+
+            <div class="flow-step-item">
+              <div class="flow-step-icon">04</div>
+              <div class="flow-step-content">
+                <div class="flow-step-name">Unit Economics & Break-Even</div>
+                <div class="flow-step-meta">Interactive break-even modeling & sensitivity</div>
+              </div>
+              <span class="flow-step-status">Exercise 4</span>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; border-top:var(--border-subtle); padding-top:10px;">
+            <span style="font-size:0.75rem; color:var(--color-slate-light);">Ready to explore the exercises?</span>
+            <a href="hub.html" style="font-size:0.8125rem; font-weight:700; color:var(--color-forest); display:flex; align-items:center; gap:4px;">
+              Enter Activity Hub →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: THE FOUNDER'S SIMULATION JOURNEY -->
+    <section class="section-padding" style="background-color: #FFFFFF; border-top: var(--border-subtle); border-bottom: var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">The Scaling Trajectory</span>
+          <h2>A Structured 4-Stage Growth Journey</h2>
+          <p class="lead-text">
+            Scaling an engineering venture linearly leads to early bankruptcy. ScaleWise guides you through four strategic inflection points that decouple output from resource consumption.
+          </p>
+        </div>
+
+        <div class="journey-timeline-grid">
+          <div class="journey-node">
+            <div class="journey-node-num">Phase 01</div>
+            <h3 class="journey-node-title">Diagnose & Audit</h3>
+            <p class="journey-node-desc">
+              Uncover hidden environmental liabilities, labor risks, and operational waste before they multiply at 10x volume.
+            </p>
+            <div style="margin-top:12px;">
+              <span class="badge badge-sage">Exercise 1</span>
+            </div>
+          </div>
+
+          <div class="journey-node">
+            <div class="journey-node-num">Phase 02</div>
+            <h3 class="journey-node-title">Redesign for Scale</h3>
+            <p class="journey-node-desc">
+              Transform a capital-heavy manual production process into an automated, asset-light, platform-powered business model.
+            </p>
+            <div style="margin-top:12px;">
+              <span class="badge badge-sage">Exercise 2 & 3</span>
+            </div>
+          </div>
+
+          <div class="journey-node">
+            <div class="journey-node-num">Phase 03</div>
+            <h3 class="journey-node-title">Financial & Risk Viability</h3>
+            <p class="journey-node-desc">
+              Stress-test unit economics, compute break-even timelines, and build resilience roadmaps against critical supply bottlenecks.
+            </p>
+            <div style="margin-top:12px;">
+              <span class="badge badge-sage">Exercise 4 & 5</span>
+            </div>
+          </div>
+
+          <div class="journey-node">
+            <div class="journey-node-num">Phase 04</div>
+            <h3 class="journey-node-title">Governance & Culture</h3>
+            <p class="journey-node-desc">
+              Institutionalize ESG impact metrics and protect company culture as the team expands from 10 to 100+ members.
+            </p>
+            <div style="margin-top:12px;">
+              <span class="badge badge-sage">Exercise 6 & 7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: THE TRIPLE BOTTOM LINE -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Core Framework</span>
+          <h2>The Triple Bottom Line Paradigm</h2>
+          <p class="lead-text">
+            Sustainable scaling requires balancing <strong>People, Planet, and Profit</strong>. When a startup optimizes for only one, the venture collapses under hidden externalities.
+          </p>
+        </div>
+
+        <div class="tbl-card-grid">
+          <!-- Planet -->
+          <div class="tbl-pillar-card">
+            <div class="tbl-pillar-header">
+              <div class="tbl-icon-circle tbl-icon-planet">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 17.93V19a2 2 0 0 0-2-2H9a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2h2a2 2 0 0 0 2-2V8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v.07A8 8 0 0 1 13 19.93z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="tbl-pillar-title">Planet</h3>
+                <span class="badge badge-mint">Environmental Stewardship</span>
+              </div>
+            </div>
+            <p style="font-size:0.875rem; color:var(--color-slate);">
+              Managing ecological boundaries, carbon intensity, circular material flows, and end-of-life battery recycling across production.
+            </p>
+            <ul class="tbl-item-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Raw material lifecycle & recyclability</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Manufacturing energy intensity (kWh/unit)</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Circular reverse logistics & packaging waste</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- People -->
+          <div class="tbl-pillar-card">
+            <div class="tbl-pillar-header">
+              <div class="tbl-icon-circle tbl-icon-people">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="tbl-pillar-title">People</h3>
+                <span class="badge badge-blue">Social & Organizational</span>
+              </div>
+            </div>
+            <p style="font-size:0.875rem; color:var(--color-slate);">
+              Cultivating worker safety in battery assembly, fair supplier conditions, community installer capacity, and inclusive team culture.
+            </p>
+            <ul class="tbl-item-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>High-voltage workshop safety & training</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Local technical job creation & installer equity</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Culture codification past Dunbar’s threshold</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Profit -->
+          <div class="tbl-pillar-card">
+            <div class="tbl-pillar-header">
+              <div class="tbl-icon-circle tbl-icon-profit">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="tbl-pillar-title">Profit</h3>
+                <span class="badge badge-amber">Economic Viability</span>
+              </div>
+            </div>
+            <p style="font-size:0.875rem; color:var(--color-slate);">
+              Achieving strong unit economics, positive contribution margins, self-sustaining break-even volumes, and risk resilience.
+            </p>
+            <ul class="tbl-item-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Robust unit contribution margin (>40%)</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>LTV:CAC ratio exceeding 3.0x at scale</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Working capital & cash runway management</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: THE SEVEN LAB CHALLENGES -->
+    <section class="section-padding" style="background-color: var(--color-cream-subtle); border-top: var(--border-subtle); border-bottom: var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Curriculum</span>
+          <h2>The Seven Startup Lab Challenges</h2>
+          <p class="lead-text">
+            Each exercise corresponds faithfully to the academic lab manual, providing rigorous theoretical framing, required procedures, and authentic interactive simulations.
+          </p>
+        </div>
+
+        <div class="activity-grid">
+          <!-- Card 1 -->
+          <div class="activity-card" data-activity-card="activity-1">
+            <div class="activity-card-top">
+              <span class="activity-num-badge">Exercise 01</span>
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 11l3 3L22 4"></path>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="activity-card-body">
+              <h3>Sustainability Audit of a Startup</h3>
+              <p class="activity-desc">
+                Critically evaluate venture operations across environmental, social, and economic dimensions using the structured Annexure A audit rubric.
+              </p>
+              <div class="activity-tags">
+                <span class="activity-tag">Triple Bottom Line</span>
+                <span class="activity-tag">Gap Analysis</span>
+                <span class="activity-tag">Annexure A</span>
+              </div>
+            </div>
+            <div class="activity-card-footer">
+              <div class="activity-status-indicator">
+                <span class="status-dot"></span>
+                <span class="activity-status-text">Not Started</span>
+              </div>
+              <a href="activity-1.html" class="btn btn-primary btn-sm">Launch Workspace →</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="activity-card" data-activity-card="activity-2">
+            <div class="activity-card-top">
+              <span class="activity-num-badge">Exercise 02</span>
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                  <line x1="9" y1="3" x2="9" y2="21"></line>
+                  <line x1="15" y1="3" x2="15" y2="21"></line>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="activity-card-body">
+              <h3>Scalable Business Model Redesign</h3>
+              <p class="activity-desc">
+                Redesign Osterwalder's 9-block Business Model Canvas to embed automation, outsourcing, and platform mechanics to decouple output from costs.
+              </p>
+              <div class="activity-tags">
+                <span class="activity-tag">BMC Redesign</span>
+                <span class="activity-tag">Automation</span>
+                <span class="activity-tag">Outsourcing</span>
+              </div>
+            </div>
+            <div class="activity-card-footer">
+              <div class="activity-status-indicator">
+                <span class="status-dot"></span>
+                <span class="activity-status-text">Not Started</span>
+              </div>
+              <a href="activity-2.html" class="btn btn-primary btn-sm">Launch Workspace →</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="activity-card" data-activity-card="activity-3">
+            <div class="activity-card-top">
+              <span class="activity-num-badge">Exercise 03</span>
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="activity-card-body">
+              <h3>Supply Chain & Operations Scaling Plan</h3>
+              <p class="activity-desc">
+                Map end-to-end supply chains, diagnose volume breakpoints, and design a phased roadmap across Pilot, Scale-Up, and Mass Production with green interventions.
+              </p>
+              <div class="activity-tags">
+                <span class="activity-tag">Capacity Breakpoints</span>
+                <span class="activity-tag">Circular Logistics</span>
+                <span class="activity-tag">Phased Roadmap</span>
+              </div>
+            </div>
+            <div class="activity-card-footer">
+              <div class="activity-status-indicator">
+                <span class="status-dot"></span>
+                <span class="activity-status-text">Not Started</span>
+              </div>
+              <a href="activity-3.html" class="btn btn-primary btn-sm">Launch Workspace →</a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="activity-card" data-activity-card="activity-4">
+            <div class="activity-card-top">
+              <span class="activity-num-badge">Exercise 04</span>
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="activity-card-body">
+              <h3>Financial Projections for Scaling</h3>
+              <p class="activity-desc">
+                Construct unit economics (CAC, LTV, contribution margin), determine the break-even volume, and simulate 5-year multi-scenario cash-flow trajectories.
+              </p>
+              <div class="activity-tags">
+                <span class="activity-tag">Break-Even Chart</span>
+                <span class="activity-tag">Unit Economics</span>
+                <span class="activity-tag">Sensitivity ±20%</span>
+              </div>
+            </div>
+            <div class="activity-card-footer">
+              <div class="activity-status-indicator">
+                <span class="status-dot"></span>
+                <span class="activity-status-text">Not Started</span>
+              </div>
+              <a href="activity-4.html" class="btn btn-primary btn-sm">Launch Workspace →</a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="activity-card" data-activity-card="activity-5">
+            <div class="activity-card-top">
+              <span class="activity-num-badge">Exercise 05</span>
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 22 22 22 12 2"></polygon>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="activity-card-body">
+              <h3>Risk Assessment & Mitigation Roadmap</h3>
+              <p class="activity-desc">
+                Categorize 12 scaling-stage risks across a 5×5 Probability-Impact matrix, establish mitigation actions, and define early-warning trigger indicators.
+              </p>
+              <div class="activity-tags">
+                <span class="activity-tag">5x5 Risk Matrix</span>
+                <span class="activity-tag">Contingency Plans</span>
+                <span class="activity-tag">Trigger Metrics</span>
+              </div>
+            </div>
+            <div class="activity-card-footer">
+              <div class="activity-status-indicator">
+                <span class="status-dot"></span>
+                <span class="activity-status-text">Not Started</span>
+              </div>
+              <a href="activity-5.html" class="btn btn-primary btn-sm">Launch Workspace →</a>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="activity-card" data-activity-card="activity-6">
+            <div class="activity-card-top">
+              <span class="activity-num-badge">Exercise 06</span>
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="activity-card-body">
+              <h3>ESG Integration & Impact Measurement</h3>
+              <p class="activity-desc">
+                Design material Environmental, Social, and Governance metrics, track targets with a live KPI dashboard, and draft an investor-ready ESG statement.
+              </p>
+              <div class="activity-tags">
+                <span class="activity-tag">ESG Dashboard</span>
+                <span class="activity-tag">Materiality</span>
+                <span class="activity-tag">GRI / SASB / SDGs</span>
+              </div>
+            </div>
+            <div class="activity-card-footer">
+              <div class="activity-status-indicator">
+                <span class="status-dot"></span>
+                <span class="activity-status-text">Not Started</span>
+              </div>
+              <a href="activity-6.html" class="btn btn-primary btn-sm">Launch Workspace →</a>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="activity-card" data-activity-card="activity-7">
+            <div class="activity-card-top">
+              <span class="activity-num-badge">Exercise 07</span>
+              <div class="activity-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <circle cx="19" cy="11" r="2"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="activity-card-body">
+              <h3>Team and Culture Scaling Exercise</h3>
+              <p class="activity-desc">
+                Architect organizational hierarchies across 10, 25, 50, and 100+ employees, resolve Dunbar coordination breakdowns, and codify core founding values.
+              </p>
+              <div class="activity-tags">
+                <span class="activity-tag">Org Chart Growth</span>
+                <span class="activity-tag">Dunbar Thresholds</span>
+                <span class="activity-tag">Culture Playbook</span>
+              </div>
+            </div>
+            <div class="activity-card-footer">
+              <div class="activity-status-indicator">
+                <span class="status-dot"></span>
+                <span class="activity-status-text">Not Started</span>
+              </div>
+              <a href="activity-7.html" class="btn btn-primary btn-sm">Launch Workspace →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: GROWTH DASHBOARD PREVIEW CALLOUT -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="card card-dark" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:var(--space-xl); padding:var(--space-2xl);">
+          <div style="max-width: 600px;">
+            <span class="badge badge-mint" style="margin-bottom:12px;">Browser-Persisted Tracking</span>
+            <h2 style="color:#FFFFFF; margin-bottom:8px;">Ready to Track Your Progress?</h2>
+            <p style="color:var(--color-sage-subtle); font-size:1.05rem;">
+              Mark exercises as completed, monitor your overall completion percentage, and manage your academic lab workflow directly from the Growth Dashboard. No login or backend needed.
+            </p>
+          </div>
+          <div>
+            <a href="dashboard.html" class="btn btn-light btn-lg">Open Growth Dashboard →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-link" style="color:#FFFFFF; margin-bottom:12px;">
+            <div class="brand-icon" style="background:var(--color-mint); color:var(--color-forest-dark);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span class="brand-name" style="color:#FFFFFF;">ScaleWise</span>
+          </div>
+          <p class="footer-brand-desc">
+            Build Better. Scale Smarter. Grow Sustainably. An interactive simulation bridging startup scaling strategy and sustainability frameworks.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Lab Activities</h5>
+          <ul class="footer-links">
+            <li><a href="activity-1.html">1. Sustainability Audit</a></li>
+            <li><a href="activity-2.html">2. Business Model Redesign</a></li>
+            <li><a href="activity-3.html">3. Supply Chain Plan</a></li>
+            <li><a href="activity-4.html">4. Financial Projections</a></li>
+            <li><a href="activity-5.html">5. Risk Roadmap</a></li>
+            <li><a href="activity-6.html">6. ESG Dashboard</a></li>
+            <li><a href="activity-7.html">7. Team & Culture</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Resources</h5>
+          <ul class="footer-links">
+            <li><a href="founder-brief.html">Founder's Brief (Solvanta)</a></li>
+            <li><a href="hub.html">Activity Hub</a></li>
+            <li><a href="toolkit.html">Sustainability Toolkit</a></li>
+            <li><a href="dashboard.html">Growth Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Evaluation Rubric</h5>
+          <ul class="footer-links" style="font-size:0.8125rem; color:var(--color-sage-subtle);">
+            <li>Conceptual Clarity (2 pts)</li>
+            <li>Analytical Depth (2 pts)</li>
+            <li>Feasibility & Practicality (2 pts)</li>
+            <li>Presentation & Docs (2 pts)</li>
+            <li>Timeliness (2 pts)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="academic-attribution">
+          <strong>Academic Simulation Notice:</strong> ScaleWise is an educational learning website based on the prescribed <em>Startup Sustainability & Scalability Lab</em> curriculum. The venture "Solvanta Energy Systems" and associated metrics are illustrative case studies designed for experiential learning.
+        </div>
+        <div>
+          &copy; ScaleWise Lab Simulation. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

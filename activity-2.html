@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 2: Scalable Business Model Redesign | ScaleWise</title>
+  <meta name="description" content="Exercise 2: Scalable Business Model Redesign. Redesign Osterwalder's Business Model Canvas to embed automation, outsourcing, and platform elements.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/activities.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="ScaleWise Home">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">ScaleWise</span>
+          <span class="brand-sub">Sustainability Lab</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="founder-brief.html">Founder's Brief</a></li>
+          <li class="nav-item"><a href="hub.html" class="active">Activity Hub</a></li>
+          <li class="nav-item"><a href="toolkit.html">Toolkit</a></li>
+          <li class="nav-item"><a href="dashboard.html">Growth Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="dashboard.html" class="nav-progress-pill" title="View your simulation progress">
+          <span class="progress-pill-dot"></span>
+          <span class="nav-progress-text">0/7 Done</span>
+          <span class="nav-progress-percent" style="color:var(--color-slate-light); font-weight:400; font-size:0.75rem;">(0%)</span>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="founder-brief.html">Founder's Brief</a></li>
+      <li><a href="hub.html" class="active">Activity Hub (7 Challenges)</a></li>
+      <li><a href="toolkit.html">Sustainability Toolkit</a></li>
+      <li><a href="dashboard.html">Growth Dashboard</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Activity Top Banner -->
+    <section class="activity-header-bar">
+      <div class="container">
+        <div class="activity-header-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="hub.html">Activity Hub</a>
+          <span>/</span>
+          <span>Exercise 2</span>
+        </div>
+        <div class="activity-headline-wrap">
+          <div class="activity-headline-left">
+            <span class="badge badge-mint" style="margin-bottom:8px;">Business Model Decoupling</span>
+            <h1>Exercise 2: Scalable Business Model Redesign</h1>
+            <p>
+              Redesign Osterwalder's Business Model Canvas to decouple venture growth from linear cost increases by embedding automation, outsourcing, and platform mechanics.
+            </p>
+          </div>
+          <div class="activity-header-actions">
+            <button class="btn btn-outline" data-toggle-complete="activity-2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Mark as Completed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sub-navigation -->
+    <div class="activity-nav-subbar">
+      <div class="container">
+        <ul class="subbar-nav-list">
+          <li><a href="#simulation" class="active">Interactive BMC Canvas</a></li>
+          <li><a href="#objective">Objective & Outcomes</a></li>
+          <li><a href="#theory">Background Theory</a></li>
+          <li><a href="#procedure">Procedure & Tasks</a></li>
+          <li><a href="#changelog">Change Log & Annexure B</a></li>
+          <li><a href="#evaluation">Evaluation Criteria</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container workspace-layout">
+
+      <!-- INTERACTIVE SIMULATION: BUSINESS MODEL CANVAS REDESIGN -->
+      <section id="simulation" class="interactive-simulation-box">
+        <span class="simulation-badge">Interactive Simulation 02</span>
+        <div class="simulation-header">
+          <h3>Interactive Business Model Canvas: Baseline vs. Scalable Redesign</h3>
+          <p>
+            Explore all nine blocks of the Business Model Canvas. Toggle between Solvanta's <strong>Baseline Model</strong> (linear manual manufacturing) and the <strong>Redesigned Scalable Model</strong>. Click any canvas block to inspect the structural transformation, the decoupling mechanism, and the empirical unit cost impact.
+          </p>
+        </div>
+
+        <!-- View Mode Switcher -->
+        <div class="bmc-view-toggles">
+          <button class="bmc-view-btn" data-view="baseline">Baseline Model (Linear)</button>
+          <button class="bmc-view-btn active" data-view="redesigned">Redesigned Model (Scalable)</button>
+        </div>
+
+        <!-- The 9-Block Osterwalder Canvas Grid -->
+        <div class="bmc-grid-wrapper">
+
+          <!-- 1. Key Partnerships -->
+          <div class="bmc-cell bmc-key-partnerships" data-block-key="partners">
+            <div class="bmc-cell-header">
+              <span class="bmc-cell-title">Key Partnerships</span>
+              <svg class="bmc-cell-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+            </div>
+            <div class="bmc-item-list">
+              <div class="bmc-content-baseline" style="display:none;">
+                <div class="bmc-pill">Single regional metal shop</div>
+                <div class="bmc-pill">Local battery importer</div>
+                <div class="bmc-pill">Ad-hoc diesel couriers</div>
+              </div>
+              <div class="bmc-content-redesigned">
+                <div class="bmc-pill tag-outsourcing">Tier-1 Contract Manufacturer (ISO 14001)</div>
+                <div class="bmc-pill tag-outsourcing">Global LFP cell off-take agreements</div>
+                <div class="bmc-pill tag-platform">Certified installer partner network</div>
+                <div class="bmc-pill tag-outsourcing">Circular battery recycling partner</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Key Activities -->
+          <div class="bmc-cell bmc-key-activities" data-block-key="activities">
+            <div class="bmc-cell-header">
+              <span class="bmc-cell-title">Key Activities</span>
+              <svg class="bmc-cell-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <div class="bmc-item-list">
+              <div class="bmc-content-baseline" style="display:none;">
+                <div class="bmc-pill">Manual wiring & bench assembly</div>
+                <div class="bmc-pill">In-person client site surveys</div>
+                <div class="bmc-pill">Manual battery testing</div>
+              </div>
+              <div class="bmc-content-redesigned">
+                <div class="bmc-pill tag-automation">Automated Optical Inspection (AOI)</div>
+                <div class="bmc-pill tag-automation">Robotic cell laser welding</div>
+                <div class="bmc-pill tag-platform">Cloud firmware deployment (OTA)</div>
+                <div class="bmc-pill">Contract partner quality audits</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Key Resources -->
+          <div class="bmc-cell bmc-key-resources" data-block-key="resources">
+            <div class="bmc-cell-header">
+              <span class="bmc-cell-title">Key Resources</span>
+              <svg class="bmc-cell-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <div class="bmc-item-list">
+              <div class="bmc-content-baseline" style="display:none;">
+                <div class="bmc-pill">1,200 sq ft rented garage workshop</div>
+                <div class="bmc-pill">Specialized wiring technicians</div>
+                <div class="bmc-pill">Manual diagnostic tools</div>
+              </div>
+              <div class="bmc-content-redesigned">
+                <div class="bmc-pill tag-platform">Solvanta OS telemetry IP & patents</div>
+                <div class="bmc-pill tag-platform">Modular design architectures</div>
+                <div class="bmc-pill tag-outsourcing">CM contracted factory capacity</div>
+                <div class="bmc-pill">Digital twin cloud platform</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Value Propositions (Center) -->
+          <div class="bmc-cell bmc-value-props" data-block-key="value">
+            <div class="bmc-cell-header">
+              <span class="bmc-cell-title">Value Propositions</span>
+              <svg class="bmc-cell-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="bmc-item-list">
+              <div class="bmc-content-baseline" style="display:none;">
+                <div class="bmc-pill">Custom solar backup storage for local shops</div>
+                <div class="bmc-pill">Manual generator changeover switch</div>
+                <div class="bmc-pill">High upfront capital cost ($4,500)</div>
+              </div>
+              <div class="bmc-content-redesigned">
+                <div class="bmc-pill tag-platform">Modular plug-and-play clean power (5-50kWh)</div>
+                <div class="bmc-pill tag-automation">Autonomous AI load balancing & peak shaving</div>
+                <div class="bmc-pill tag-platform">Zero upfront capex via Energy-as-a-Service</div>
+                <div class="bmc-pill">Real-time carbon telemetry & ESG audit reports</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Customer Relationships -->
+          <div class="bmc-cell bmc-cust-relations" data-block-key="relationships">
+            <div class="bmc-cell-header">
+              <span class="bmc-cell-title">Customer Relations</span>
+              <svg class="bmc-cell-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <div class="bmc-item-list">
+              <div class="bmc-content-baseline" style="display:none;">
+                <div class="bmc-pill">Ad-hoc founder phone support</div>
+                <div class="bmc-pill">Manual dispatch repair trips</div>
+              </div>
+              <div class="bmc-content-redesigned">
+                <div class="bmc-pill tag-automation">Proactive IoT remote diagnostics</div>
+                <div class="bmc-pill tag-platform">Self-service installer knowledge portal</div>
+                <div class="bmc-pill tag-automation">24/7 automated alert escalation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Channels -->
+          <div class="bmc-cell bmc-channels" data-block-key="channels">
+            <div class="bmc-cell-header">
+              <span class="bmc-cell-title">Channels</span>
+              <svg class="bmc-cell-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </div>
+            <div class="bmc-item-list">
+              <div class="bmc-content-baseline" style="display:none;">
+                <div class="bmc-pill">Direct founder word-of-mouth</div>
+                <div class="bmc-pill">Local trade exhibitions</div>
+              </div>
+              <div class="bmc-content-redesigned">
+                <div class="bmc-pill tag-platform">Regional clean-tech distributor marketplace</div>
+                <div class="bmc-pill tag-outsourcing">Certified electrical contractor networks</div>
+                <div class="bmc-pill">B2B enterprise direct key accounts</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Customer Segments -->
+          <div class="bmc-cell bmc-cust-segments" data-block-key="segments">
+            <div class="bmc-cell-header">
+              <span class="bmc-cell-title">Customer Segments</span>
+              <svg class="bmc-cell-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="bmc-item-list">
+              <div class="bmc-content-baseline" style="display:none;">
+                <div class="bmc-pill">Individual retail store owners</div>
+                <div class="bmc-pill">Small eco-lodges requiring custom units</div>
+              </div>
+              <div class="bmc-content-redesigned">
+                <div class="bmc-pill">Commercial agro-processors & cold storage</div>
+                <div class="bmc-pill">Distributed logistics & warehouse hubs</div>
+                <div class="bmc-pill">Rural healthcare & clinical refrigeration</div>
+                <div class="bmc-pill tag-platform">Clean energy infrastructure funds</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Cost Structure (Bottom Left) -->
+          <div class="bmc-cell bmc-cost-structure" data-block-key="costs">
+            <div class="bmc-cell-header">
+              <span class="bmc-cell-title">Cost Structure</span>
+              <svg class="bmc-cell-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <div class="bmc-item-list">
+              <div class="bmc-content-baseline" style="display:none;">
+                <div class="bmc-pill">High fixed workshop rent & bench maintenance</div>
+                <div class="bmc-pill">Salaried assembly technicians ($45/unit labor)</div>
+                <div class="bmc-pill">High unoptimized spot component purchases</div>
+              </div>
+              <div class="bmc-content-redesigned">
+                <div class="bmc-pill tag-outsourcing">Variable contract manufacturing per-unit fees</div>
+                <div class="bmc-pill tag-automation">Bulk volume discounted BOM procurement (-34%)</div>
+                <div class="bmc-pill tag-platform">Cloud server & IoT telemetry API infrastructure</div>
+                <div class="bmc-pill">Core R&D, firmware development, and IP licensing</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Revenue Streams (Bottom Right) -->
+          <div class="bmc-cell bmc-rev-streams" data-block-key="revenue">
+            <div class="bmc-cell-header">
+              <span class="bmc-cell-title">Revenue Streams</span>
+              <svg class="bmc-cell-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+            </div>
+            <div class="bmc-item-list">
+              <div class="bmc-content-baseline" style="display:none;">
+                <div class="bmc-pill">One-off hardware sales ($4,500/unit)</div>
+                <div class="bmc-pill">Zero recurring revenue; lumpy cash inflows</div>
+              </div>
+              <div class="bmc-content-redesigned">
+                <div class="bmc-pill">Hardware sales ($4,500) or low capex install</div>
+                <div class="bmc-pill tag-platform">Recurring Solvanta OS IoT subscription ($35/mo/unit)</div>
+                <div class="bmc-pill tag-platform">Energy-as-a-Service (EaaS) kilowatt-hour fee</div>
+                <div class="bmc-pill">Battery recycling credit & remanufacturing yield</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Selected Block Inspector Detail Box -->
+        <div class="bmc-cell-inspector">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:var(--space-md); border-bottom:1px solid var(--color-cream-border); padding-bottom:8px;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <h4 id="bmc-inspector-title" style="margin:0; font-size:1.25rem;">Key Partnerships</h4>
+              <span id="bmc-inspector-mechanism" class="badge badge-amber">Outsourcing</span>
+            </div>
+            <span style="font-size:0.75rem; color:var(--color-slate-light);">Click any block above to inspect</span>
+          </div>
+
+          <div class="bmc-inspector-grid">
+            <div>
+              <strong style="color:var(--color-slate); font-size:0.8125rem; text-transform:uppercase;">Baseline Approach (Linear)</strong>
+              <p id="bmc-inspector-baseline" style="font-size:0.875rem; margin-top:4px;">
+                Single regional sheet metal vendor, local battery cell importer, direct manual transport providers.
+              </p>
+            </div>
+            <div>
+              <strong style="color:var(--color-forest); font-size:0.8125rem; text-transform:uppercase;">Redesigned Approach (Scalable)</strong>
+              <p id="bmc-inspector-scalable" style="font-size:0.875rem; margin-top:4px;">
+                Tier-1 Contract Manufacturer with ISO14001, global certified LFP battery cell agreements, 3PL logistics provider with reverse logistics capabilities.
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top:var(--space-md); padding-top:var(--space-sm); border-top:1px dashed var(--color-cream-border);">
+            <strong style="font-size:0.8125rem; color:var(--color-forest-dark);">Decoupling Justification & Impact:</strong>
+            <p id="bmc-inspector-impact" style="font-size:0.875rem; color:var(--color-slate); margin-top:2px;">
+              Reduces fixed equipment capital requirement by 65%; increases max capacity ceiling from 35 to 2,000 units/month.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ACADEMIC SECTION 1: OBJECTIVE & OUTCOMES -->
+      <section id="objective" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">1</span>
+          <span>Objective & Learning Outcomes</span>
+        </h3>
+        <p><strong>Objective:</strong> To redesign the Business Model Canvas (BMC) of a mechanical/engineering-based startup so that it can scale efficiently, incorporating automation, outsourcing, and/or platform-based elements.</p>
+        
+        <h4 style="margin-top:var(--space-md); margin-bottom:var(--space-xs); font-size:1.05rem;">Learning Outcomes</h4>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px;">
+          <li>Construct a baseline Business Model Canvas for an engineering-based startup.</li>
+          <li>Diagnose structural constraints that limit scalability in the baseline model.</li>
+          <li>Redesign the canvas to embed automation, outsourcing, or platform mechanisms that enable scale without proportional cost growth.</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 2: BACKGROUND / THEORY -->
+      <section id="theory" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">2</span>
+          <span>Background / Theory</span>
+        </h3>
+        <p>
+          Many engineering and manufacturing startups scale linearly — doubling output requires roughly doubling headcount and capital. Scalable business models decouple growth from proportional resource consumption through:
+        </p>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:var(--space-md); margin:var(--space-md) 0;">
+          <div style="background:var(--color-cream-subtle); padding:var(--space-md); border-radius:var(--radius-md); border-top:3px solid #2563EB;">
+            <strong style="color:#2563EB;">1. Automation</strong>
+            <p style="font-size:0.8125rem; margin-top:4px;">Reducing manual labour dependency through automated testing, robotic assembly, or software workflows.</p>
+          </div>
+          <div style="background:var(--color-cream-subtle); padding:var(--space-md); border-radius:var(--radius-md); border-top:3px solid #D97706;">
+            <strong style="color:#D97706;">2. Outsourcing</strong>
+            <p style="font-size:0.8125rem; margin-top:4px;">Converting fixed capital costs to variable unit costs and accessing specialized third-party capacity (e.g. Contract Manufacturing, 3PL).</p>
+          </div>
+          <div style="background:var(--color-cream-subtle); padding:var(--space-md); border-radius:var(--radius-md); border-top:3px solid #10B981;">
+            <strong style="color:#10B981;">3. Platform Elements</strong>
+            <p style="font-size:0.8125rem; margin-top:4px;">Enabling network effects, ecosystem partner value creation, and high-margin software telemetry (e.g. installer marketplaces, APIs).</p>
+          </div>
+        </div>
+        <p>
+          This exercise applies <strong>Osterwalder's Business Model Canvas</strong> as the diagnostic redesign tool to systematically eliminate linear growth bottlenecks.
+        </p>
+      </section>
+
+      <!-- ACADEMIC SECTION 3: MATERIALS REQUIRED -->
+      <section class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">3</span>
+          <span>Materials / Resources Required</span>
+        </h3>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px;">
+          <li><strong>Blank Business Model Canvas template:</strong> Annexure B reference layout.</li>
+          <li><strong>Case brief:</strong> Case brief on a mechanical/engineering startup (instructor-provided or self-selected — e.g. <a href="founder-brief.html">Solvanta Energy Systems</a>).</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 4: PROCEDURE / TASKS -->
+      <section id="procedure" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">4</span>
+          <span>Procedure / Tasks</span>
+        </h3>
+        <ol class="task-list">
+          <li class="task-item">
+            <span class="task-num-circle">1</span>
+            <div class="task-content">
+              <strong>Select or receive a case brief:</strong>
+              For a mechanical/engineering-based startup (e.g., a precision-parts manufacturer, an EV component maker, or a renewable energy device company) — or continue using your Exercise 1 startup if it fits this profile.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">2</span>
+            <div class="task-content">
+              <strong>Draft current-state Business Model Canvas:</strong>
+              Covering all nine blocks: Customer Segments, Value Propositions, Channels, Customer Relationships, Revenue Streams, Key Resources, Key Activities, Key Partnerships, and Cost Structure.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">3</span>
+            <div class="task-content">
+              <strong>Analyse each block for scalability bottlenecks:</strong>
+              E.g., dependence on skilled manual labour, single-supplier risk, capital-intensive fixed assets.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">4</span>
+            <div class="task-content">
+              <strong>Redesign the canvas:</strong>
+              Explicitly introduce at least <em>one automation element</em> (e.g., automated QA, robotic assembly), <em>one outsourcing element</em> (e.g., contract manufacturing, 3PL logistics), and <em>one platform element</em> (e.g., a partner marketplace, API-based service layer).
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">5</span>
+            <div class="task-content">
+              <strong>Justify each redesign choice:</strong>
+              Document expected impact on unit cost, lead time, or capacity ceiling.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">6</span>
+            <div class="task-content">
+              <strong>Present side by side with a change log:</strong>
+              Present the before/after canvases side by side with an itemized change log table.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ACADEMIC SECTION 5: DELIVERABLES & CHANGE LOG (ANNEXURE B) -->
+      <section id="changelog" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">5</span>
+          <span>Deliverables / Submission (Annexure B Change Log)</span>
+        </h3>
+        
+        <p>Your laboratory submission must include:</p>
+        <ul style="padding-left:20px; color:var(--color-slate); margin-bottom:var(--space-md); display:flex; flex-direction:column; gap:4px;">
+          <li>Baseline Business Model Canvas.</li>
+          <li>Redesigned (scalable) Business Model Canvas.</li>
+          <li>Change log with explicit justification for each modification.</li>
+        </ul>
+
+        <h4 style="margin:var(--space-lg) 0 var(--space-xs); font-size:1.1rem; color:var(--color-forest-dark);">
+          Annexure B: Comprehensive Redesign Change Log for Solvanta
+        </h4>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>BMC Block</th>
+                <th>Baseline Constraint</th>
+                <th>Redesign Intervention</th>
+                <th>Mechanism Type</th>
+                <th>Expected Metric Impact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Key Partnerships</strong></td>
+                <td>Single local battery importer; spot vehicle haulers.</td>
+                <td>ISO 14001 certified Contract Manufacturer (CM) & 3PL logistics partner with returnable dunnage.</td>
+                <td><span class="badge badge-amber">Outsourcing</span></td>
+                <td>Eliminates $1.8M factory equipment Capex; scales production to 2,500 units/mo.</td>
+              </tr>
+              <tr>
+                <td><strong>Key Activities</strong></td>
+                <td>Manual 14.5 hr hand-soldering and bench volt testing.</td>
+                <td>Automated Optical Inspection (AOI) + robotic cell laser soldering in CM production line.</td>
+                <td><span class="badge badge-blue">Automation</span></td>
+                <td>Assembly time reduced to 1.8 hrs/unit; first-pass defect rate drops from 4.8% to 0.2%.</td>
+              </tr>
+              <tr>
+                <td><strong>Channels & Relations</strong></td>
+                <td>Founder telephone calls and individual on-site repair visits.</td>
+                <td>Self-service installer portal and Solvanta OS IoT automated predictive maintenance telemetry.</td>
+                <td><span class="badge badge-mint">Platform</span></td>
+                <td>Reduces customer support cost by 78%; expands distribution across 12 countries via partner network.</td>
+              </tr>
+              <tr>
+                <td><strong>Revenue Streams</strong></td>
+                <td>One-off hardware sales ($4,500); zero recurring income.</td>
+                <td>Hardware sale + Solvanta OS SaaS subscription ($35/mo) + Energy-as-a-Service (EaaS) leasing.</td>
+                <td><span class="badge badge-mint">Platform</span></td>
+                <td>Increases Customer Lifetime Value (LTV) from $4,500 to $9,800; builds 34% recurring ARR.</td>
+              </tr>
+              <tr>
+                <td><strong>Cost Structure</strong></td>
+                <td>High fixed workshop rent and salaried manual labor.</td>
+                <td>Variable per-unit contract manufacturing fees and volume-tiered automated procurement.</td>
+                <td><span class="badge badge-amber">Outsourcing</span></td>
+                <td>Decouples unit cost; unit BOM & manufacturing cost drops by 42% at 3,000 unit scale.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ACADEMIC SECTION 6: EVALUATION CRITERIA -->
+      <section id="evaluation" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">6</span>
+          <span>Evaluation Criteria (Total 10 Marks)</span>
+        </h3>
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Marks</th>
+                <th>Evaluation Standard</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Conceptual Clarity</strong></td>
+                <td>2.0 Marks</td>
+                <td>Clear understanding of linear vs scalable business architectures and Osterwalder's 9 blocks.</td>
+              </tr>
+              <tr>
+                <td><strong>Analytical Depth</strong></td>
+                <td>2.0 Marks</td>
+                <td>Rigorous diagnosis of baseline scalability bottlenecks and structural constraints.</td>
+              </tr>
+              <tr>
+                <td><strong>Feasibility & Practicality</strong></td>
+                <td>2.0 Marks</td>
+                <td>Realistic incorporation of automation, outsourcing, and platform elements without fantasy claims.</td>
+              </tr>
+              <tr>
+                <td><strong>Presentation & Documentation</strong></td>
+                <td>2.0 Marks</td>
+                <td>Side-by-side canvas presentation with well-structured, itemized change log justification.</td>
+              </tr>
+              <tr>
+                <td><strong>Timeliness</strong></td>
+                <td>2.0 Marks</td>
+                <td>Punctual lab submission conforming to all course instructions.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Activity Pagination -->
+      <div class="activity-pagination">
+        <a href="activity-1.html" class="pagination-btn">
+          <span class="pagination-label">Previous Challenge</span>
+          <span class="pagination-title">← Exercise 1: Sustainability Audit</span>
+        </a>
+
+        <div style="text-align:center;">
+          <span class="badge badge-academic">Exercise 2 of 7</span>
+        </div>
+
+        <a href="activity-3.html" class="pagination-btn" style="text-align:right;">
+          <span class="pagination-label">Next Challenge</span>
+          <span class="pagination-title">Exercise 3: Supply Chain Plan →</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="academic-attribution">
+          <strong>Academic Simulation Notice:</strong> ScaleWise is an educational simulation based on the <em>Startup Sustainability & Scalability Lab</em> curriculum.
+        </div>
+        <div>&copy; ScaleWise Lab Simulation.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/activities.js"></script>
+</body>
+</html>

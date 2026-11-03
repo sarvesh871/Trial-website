@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 5: Risk Assessment and Mitigation Roadmap | ScaleWise</title>
+  <meta name="description" content="Exercise 5: Risk Assessment and Mitigation Roadmap. Quantify scaling risks across an interactive 5x5 probability-impact matrix and build resilience plans.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/activities.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="ScaleWise Home">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">ScaleWise</span>
+          <span class="brand-sub">Sustainability Lab</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="founder-brief.html">Founder's Brief</a></li>
+          <li class="nav-item"><a href="hub.html" class="active">Activity Hub</a></li>
+          <li class="nav-item"><a href="toolkit.html">Toolkit</a></li>
+          <li class="nav-item"><a href="dashboard.html">Growth Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="dashboard.html" class="nav-progress-pill" title="View your simulation progress">
+          <span class="progress-pill-dot"></span>
+          <span class="nav-progress-text">0/7 Done</span>
+          <span class="nav-progress-percent" style="color:var(--color-slate-light); font-weight:400; font-size:0.75rem;">(0%)</span>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="founder-brief.html">Founder's Brief</a></li>
+      <li><a href="hub.html" class="active">Activity Hub (7 Challenges)</a></li>
+      <li><a href="toolkit.html">Sustainability Toolkit</a></li>
+      <li><a href="dashboard.html">Growth Dashboard</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Activity Top Banner -->
+    <section class="activity-header-bar">
+      <div class="container">
+        <div class="activity-header-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="hub.html">Activity Hub</a>
+          <span>/</span>
+          <span>Exercise 5</span>
+        </div>
+        <div class="activity-headline-wrap">
+          <div class="activity-headline-left">
+            <span class="badge badge-mint" style="margin-bottom:8px;">Risk & Resilience Strategy</span>
+            <h1>Exercise 5: Risk Assessment & Mitigation Roadmap</h1>
+            <p>
+              Identify, quantify, and prioritize scaling-stage risks across a 5×5 Probability-Impact matrix. Formulate concrete mitigation actions, contingencies, and early-warning trigger indicators.
+            </p>
+          </div>
+          <div class="activity-header-actions">
+            <button class="btn btn-outline" data-toggle-complete="activity-5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Mark as Completed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sub-navigation -->
+    <div class="activity-nav-subbar">
+      <div class="container">
+        <ul class="subbar-nav-list">
+          <li><a href="#simulation" class="active">Interactive 5x5 Matrix</a></li>
+          <li><a href="#objective">Objective & Outcomes</a></li>
+          <li><a href="#theory">Background Theory</a></li>
+          <li><a href="#procedure">Procedure & Tasks</a></li>
+          <li><a href="#register">Risk Register & Annexure E</a></li>
+          <li><a href="#top6">Top 6 Mitigation Plans</a></li>
+          <li><a href="#evaluation">Evaluation Criteria</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container workspace-layout">
+
+      <!-- INTERACTIVE SIMULATION: 5X5 PROBABILITY-IMPACT MATRIX -->
+      <section id="simulation" class="interactive-simulation-box">
+        <span class="simulation-badge">Interactive Simulation 05</span>
+        <div class="simulation-header">
+          <h3>Interactive 5×5 Probability–Impact Heatmap Matrix</h3>
+          <p>
+            Scaling amplifies vulnerability: small pilot setbacks become fatal existential threats at 10x volume. Click any cell in the 5×5 matrix to view the calculated score (Probability &times; Impact), risk priority level, and the specific illustrative risks mapped to that coordinate.
+          </p>
+        </div>
+
+        <div class="callout callout-fictional" style="margin-bottom:var(--space-xl);">
+          <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <div>
+            <strong>Educational Simulation Notice:</strong>
+            The twelve illustrative risks below reflect typical clean-tech hardware scaling bottlenecks (supply chains, lithium pricing, certification backlogs). They are educational exemplars and do not claim to be exhaustive.
+          </div>
+        </div>
+
+        <!-- 2-Column Matrix + Inspector Layout -->
+        <div class="risk-matrix-layout">
+          <!-- The 5x5 Grid Card -->
+          <div class="matrix-grid-card">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <h4 style="margin:0; font-size:1rem; color:var(--color-forest-dark);">Probability vs. Impact Heatmap</h4>
+              <div style="font-size:0.6875rem; color:var(--color-slate-light);">Score = Prob &times; Imp</div>
+            </div>
+
+            <!-- Heatmap Table -->
+            <table class="matrix-table" aria-label="5x5 Risk Heatmap Matrix">
+              <thead>
+                <tr>
+                  <th class="matrix-axis-label" style="width:50px;">Prob \ Imp</th>
+                  <th class="matrix-header-cell">1<br><span style="font-weight:400; font-size:0.6875rem;">Negligible</span></th>
+                  <th class="matrix-header-cell">2<br><span style="font-weight:400; font-size:0.6875rem;">Minor</span></th>
+                  <th class="matrix-header-cell">3<br><span style="font-weight:400; font-size:0.6875rem;">Moderate</span></th>
+                  <th class="matrix-header-cell">4<br><span style="font-weight:400; font-size:0.6875rem;">Major</span></th>
+                  <th class="matrix-header-cell">5<br><span style="font-weight:400; font-size:0.6875rem;">Catastrophic</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row P=5 -->
+                <tr>
+                  <td class="matrix-axis-label">5 (Almost Certain)</td>
+                  <td><div class="matrix-cell cell-risk-low" data-cell-prob="5" data-cell-imp="1">5</div></td>
+                  <td><div class="matrix-cell cell-risk-medium" data-cell-prob="5" data-cell-imp="2">10</div></td>
+                  <td><div class="matrix-cell cell-risk-high" data-cell-prob="5" data-cell-imp="3">15</div></td>
+                  <td><div class="matrix-cell cell-risk-extreme" data-cell-prob="5" data-cell-imp="4">20</div></td>
+                  <td><div class="matrix-cell cell-risk-extreme" data-cell-prob="5" data-cell-imp="5">25</div></td>
+                </tr>
+                <!-- Row P=4 -->
+                <tr>
+                  <td class="matrix-axis-label">4 (Likely)</td>
+                  <td><div class="matrix-cell cell-risk-low" data-cell-prob="4" data-cell-imp="1">4</div></td>
+                  <td><div class="matrix-cell cell-risk-medium" data-cell-prob="4" data-cell-imp="2">8</div></td>
+                  <td><div class="matrix-cell cell-risk-high" data-cell-prob="4" data-cell-imp="3">12</div></td>
+                  <td><div class="matrix-cell cell-risk-high" data-cell-prob="4" data-cell-imp="4">16</div></td>
+                  <td><div class="matrix-cell cell-risk-extreme" data-cell-prob="4" data-cell-imp="5">20</div></td>
+                </tr>
+                <!-- Row P=3 -->
+                <tr>
+                  <td class="matrix-axis-label">3 (Possible)</td>
+                  <td><div class="matrix-cell cell-risk-low" data-cell-prob="3" data-cell-imp="1">3</div></td>
+                  <td><div class="matrix-cell cell-risk-medium" data-cell-prob="3" data-cell-imp="2">6</div></td>
+                  <td><div class="matrix-cell cell-risk-medium" data-cell-prob="3" data-cell-imp="3">9</div></td>
+                  <td><div class="matrix-cell cell-risk-high" data-cell-prob="3" data-cell-imp="4">12</div></td>
+                  <td><div class="matrix-cell cell-risk-high" data-cell-prob="3" data-cell-imp="5">15</div></td>
+                </tr>
+                <!-- Row P=2 -->
+                <tr>
+                  <td class="matrix-axis-label">2 (Unlikely)</td>
+                  <td><div class="matrix-cell cell-risk-low" data-cell-prob="2" data-cell-imp="1">2</div></td>
+                  <td><div class="matrix-cell cell-risk-low" data-cell-prob="2" data-cell-imp="2">4</div></td>
+                  <td><div class="matrix-cell cell-risk-medium" data-cell-prob="2" data-cell-imp="3">6</div></td>
+                  <td><div class="matrix-cell cell-risk-medium" data-cell-prob="2" data-cell-imp="4">8</div></td>
+                  <td><div class="matrix-cell cell-risk-medium" data-cell-prob="2" data-cell-imp="5">10</div></td>
+                </tr>
+                <!-- Row P=1 -->
+                <tr>
+                  <td class="matrix-axis-label">1 (Rare)</td>
+                  <td><div class="matrix-cell cell-risk-low" data-cell-prob="1" data-cell-imp="1">1</div></td>
+                  <td><div class="matrix-cell cell-risk-low" data-cell-prob="1" data-cell-imp="2">2</div></td>
+                  <td><div class="matrix-cell cell-risk-low" data-cell-prob="1" data-cell-imp="3">3</div></td>
+                  <td><div class="matrix-cell cell-risk-low" data-cell-prob="1" data-cell-imp="4">4</div></td>
+                  <td><div class="matrix-cell cell-risk-low" data-cell-prob="1" data-cell-imp="5">5</div></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Legend -->
+            <div style="display:flex; justify-content:space-between; margin-top:14px; font-size:0.6875rem; font-weight:700;">
+              <span style="color:#065F46;">■ Low (1-5)</span>
+              <span style="color:#713F12;">■ Med (6-10)</span>
+              <span style="color:#7C2D12;">■ High (12-16)</span>
+              <span style="color:#7F1D1D;">■ Extreme (20-25)</span>
+            </div>
+          </div>
+
+          <!-- Dynamic Cell Inspector Panel -->
+          <div class="matrix-grid-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <span class="section-eyebrow">Interactive Inspector</span>
+              <div id="matrix-cell-inspector">
+                <div style="border-bottom:1px solid #E6E8E2; padding-bottom:8px; margin-bottom:10px;">
+                  <h4 style="margin:0;">Coordinate: Prob 4, Impact 5 (Score 20)</h4>
+                  <span style="font-size:0.8125rem; font-weight:700; color:var(--color-red);">Extreme Critical Priority</span>
+                </div>
+                <div style="background:#FBFBFA; border:1px solid #E6E8E2; border-radius:6px; padding:10px; margin-bottom:8px;">
+                  <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <strong>R1: Critical LFP Battery Cell Supply Delay</strong>
+                    <span class="badge badge-sage">Operational</span>
+                  </div>
+                  <p style="font-size:0.8125rem; margin:6px 0 2px;"><strong>Mitigation:</strong> Dual-source agreements with certified secondary cell vendor; establish 45-day local inventory buffer.</p>
+                  <div style="font-size:0.75rem; color:#718096;">Owner: Head of Operations | Review: Bi-Weekly</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--color-slate); border-top:1px dashed var(--color-cream-border); padding-top:8px;">
+              💡 <em>Tip: Click any number on the matrix to view the prioritized risk and owner mitigation plan.</em>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ACADEMIC SECTION 1: OBJECTIVE & OUTCOMES -->
+      <section id="objective" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">1</span>
+          <span>Objective & Learning Outcomes</span>
+        </h3>
+        <p><strong>Objective:</strong> To identify the key risks a startup faces while scaling and to prepare contingency plans and resilience strategies to manage them.</p>
+        
+        <h4 style="margin-top:var(--space-md); margin-bottom:var(--space-xs); font-size:1.05rem;">Learning Outcomes</h4>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px;">
+          <li>Identify and classify scaling-stage risks across operational, financial, market, and regulatory categories.</li>
+          <li>Quantify risk using a probability–impact framework.</li>
+          <li>Design mitigation and contingency strategies, including early-warning indicators.</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 2: BACKGROUND / THEORY -->
+      <section id="theory" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">2</span>
+          <span>Background / Theory</span>
+        </h3>
+        <p>
+          Scaling amplifies risk: a supplier issue that was a minor inconvenience at pilot scale can halt production entirely at full scale. Structured risk assessment uses a <strong>probability–impact matrix</strong> to prioritise risks, followed by:
+        </p>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px; margin:var(--space-sm) 0;">
+          <li><strong>Mitigation planning:</strong> Preventive actions that proactively reduce the likelihood (probability) of occurrence.</li>
+          <li><strong>Contingency planning:</strong> Pre-authorized fallback actions that reduce the impact if the risk materialises.</li>
+          <li><strong>Resilience strategies:</strong> Operational redundancies that enable faster systemic recovery and business continuity.</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 3: MATERIALS REQUIRED -->
+      <section class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">3</span>
+          <span>Materials / Resources Required</span>
+        </h3>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px;">
+          <li><strong>Risk register template:</strong> Prescribed in <em>Annexure E</em>.</li>
+          <li><strong>Probability–Impact matrix template:</strong> Standard 5×5 scoring grid.</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 4: PROCEDURE / TASKS -->
+      <section id="procedure" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">4</span>
+          <span>Procedure / Tasks</span>
+        </h3>
+        <ol class="task-list">
+          <li class="task-item">
+            <span class="task-num-circle">1</span>
+            <div class="task-content">
+              <strong>Brainstorm at least 12 risks:</strong>
+              Using the venture from Exercises 1–4, identify at least 12 risks spanning operational (supply/production), financial (funding/cash flow), market (demand/competition), regulatory/compliance, and organisational (talent/culture) categories.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">2</span>
+            <div class="task-content">
+              <strong>Score on Probability & Impact:</strong>
+              Score each risk on Probability (1–5) and Impact (1–5); plot on a Probability–Impact matrix.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">3</span>
+            <div class="task-content">
+              <strong>Prioritise top 6 risks:</strong>
+              Prioritise the top 6 risks by risk score (<em>Probability &times; Impact</em>).
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">4</span>
+            <div class="task-content">
+              <strong>Formulate three-part response plan:</strong>
+              For each prioritised risk, define: a <em>mitigation action</em> (reduces likelihood), a <em>contingency plan</em> (reduces impact if the risk materialises), and an <em>early-warning indicator/trigger metric</em>.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">5</span>
+            <div class="task-content">
+              <strong>Assign owner & review frequency:</strong>
+              Assign an owner (role, not name) and an explicit review frequency for each risk.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">6</span>
+            <div class="task-content">
+              <strong>Compile Risk Mitigation Roadmap:</strong>
+              Compile the completed risk register and matrix into a comprehensive Risk Mitigation Roadmap.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ACADEMIC SECTION 5: COMPLETE 12-RISK REGISTER (ANNEXURE E) -->
+      <section id="register" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">5</span>
+          <span>Deliverables / Submission (Annexure E Risk Register)</span>
+        </h3>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:var(--space-md); margin-bottom:var(--space-md);">
+          <p style="margin:0; font-size:0.875rem; color:var(--color-slate);">
+            Full 12-risk register categorized across Operational, Financial, Regulatory, Market, and Organisational domains:
+          </p>
+          <!-- Category Filter Bar -->
+          <div class="risk-filters-bar">
+            <button class="risk-filter-btn active" data-risk-cat="all">All (12)</button>
+            <button class="risk-filter-btn" data-risk-cat="Operational">Operational (3)</button>
+            <button class="risk-filter-btn" data-risk-cat="Financial">Financial (3)</button>
+            <button class="risk-filter-btn" data-risk-cat="Regulatory">Regulatory (2)</button>
+            <button class="risk-filter-btn" data-risk-cat="Market">Market (2)</button>
+            <button class="risk-filter-btn" data-risk-cat="Organisational">Organisational (2)</button>
+          </div>
+        </div>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Risk ID</th>
+                <th>Category</th>
+                <th>Risk Description</th>
+                <th>Prob (P)</th>
+                <th>Imp (I)</th>
+                <th>Score (P&times;I)</th>
+                <th>Severity</th>
+                <th>Owner (Role)</th>
+                <th>Review Freq</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="risk-register-row" data-risk-cat="Operational">
+                <td><strong>R1</strong></td>
+                <td><span class="badge badge-sage">Operational</span></td>
+                <td>Critical LFP Battery Cell Supply Delay</td>
+                <td>4</td>
+                <td>5</td>
+                <td><strong style="color:var(--color-red);">20</strong></td>
+                <td><span class="badge badge-amber" style="background:#FEE2E2; color:#DC2626;">Extreme</span></td>
+                <td>Head of Operations</td>
+                <td>Bi-Weekly</td>
+              </tr>
+              <tr class="risk-register-row" data-risk-cat="Financial">
+                <td><strong>R2</strong></td>
+                <td><span class="badge badge-amber">Financial</span></td>
+                <td>Working Capital Cash Flow Crunch During Scale-Up</td>
+                <td>4</td>
+                <td>4</td>
+                <td><strong style="color:var(--color-red);">16</strong></td>
+                <td><span class="badge badge-amber">High</span></td>
+                <td>VP Finance / CFO</td>
+                <td>Weekly</td>
+              </tr>
+              <tr class="risk-register-row" data-risk-cat="Regulatory">
+                <td><strong>R3</strong></td>
+                <td><span class="badge badge-blue">Regulatory</span></td>
+                <td>Delays in Regional Grid Interconnection Certification</td>
+                <td>3</td>
+                <td>5</td>
+                <td><strong style="color:var(--color-red);">15</strong></td>
+                <td><span class="badge badge-amber">High</span></td>
+                <td>Regulatory Lead</td>
+                <td>Monthly</td>
+              </tr>
+              <tr class="risk-register-row" data-risk-cat="Market">
+                <td><strong>R4</strong></td>
+                <td><span class="badge badge-sage">Market</span></td>
+                <td>Price Competition from Incumbent Diesel/Solar OEMs</td>
+                <td>4</td>
+                <td>3</td>
+                <td><strong style="color:var(--color-red);">12</strong></td>
+                <td><span class="badge badge-amber">High</span></td>
+                <td>Chief Commercial Officer</td>
+                <td>Monthly</td>
+              </tr>
+              <tr class="risk-register-row" data-risk-cat="Organisational">
+                <td><strong>R5</strong></td>
+                <td><span class="badge badge-academic">Organisational</span></td>
+                <td>Shortage of Specialized Battery Management Firmware Engineers</td>
+                <td>3</td>
+                <td>4</td>
+                <td><strong style="color:var(--color-red);">12</strong></td>
+                <td><span class="badge badge-amber">High</span></td>
+                <td>Head of People & Culture</td>
+                <td>Monthly</td>
+              </tr>
+              <tr class="risk-register-row" data-risk-cat="Operational">
+                <td><strong>R6</strong></td>
+                <td><span class="badge badge-sage">Operational</span></td>
+                <td>Quality Defect in First Contract-Manufactured Batch</td>
+                <td>3</td>
+                <td>4</td>
+                <td><strong style="color:var(--color-red);">12</strong></td>
+                <td><span class="badge badge-amber">High</span></td>
+                <td>Lead Quality Engineer</td>
+                <td>Weekly</td>
+              </tr>
+              <tr class="risk-register-row" data-risk-cat="Market">
+                <td><strong>R7</strong></td>
+                <td><span class="badge badge-sage">Market</span></td>
+                <td>Customer Adoption Slowdown in Commercial Agribusiness</td>
+                <td>3</td>
+                <td>3</td>
+                <td><strong>9</strong></td>
+                <td><span class="badge badge-mint">Medium</span></td>
+                <td>Head of Business Dev</td>
+                <td>Monthly</td>
+              </tr>
+              <tr class="risk-register-row" data-risk-cat="Regulatory">
+                <td><strong>R8</strong></td>
+                <td><span class="badge badge-blue">Regulatory</span></td>
+                <td>Stricter Lithium Battery End-of-Life Disposal Mandates</td>
+                <td>3</td>
+                <td>3</td>
+                <td><strong>9</strong></td>
+                <td><span class="badge badge-mint">Medium</span></td>
+                <td>Sustainability Lead</td>
+                <td>Quarterly</td>
+              </tr>
+              <tr class="risk-register-row" data-risk-cat="Financial">
+                <td><strong>R9</strong></td>
+                <td><span class="badge badge-amber">Financial</span></td>
+                <td>Raw Material Lithium & Copper Price Volatility</td>
+                <td>4</td>
+                <td>2</td>
+                <td><strong>8</strong></td>
+                <td><span class="badge badge-mint">Medium</span></td>
+                <td>Head of Procurement</td>
+                <td>Monthly</td>
+              </tr>
+              <tr class="risk-register-row" data-risk-cat="Organisational">
+                <td><strong>R10</strong></td>
+                <td><span class="badge badge-academic">Organisational</span></td>
+                <td>Dilution of Mission & Culture During Rapid Scaling</td>
+                <td>3</td>
+                <td>2</td>
+                <td><strong>6</strong></td>
+                <td><span class="badge badge-mint">Medium</span></td>
+                <td>CEO / Founder</td>
+                <td>Bi-Monthly</td>
+              </tr>
+              <tr class="risk-register-row" data-risk-cat="Financial">
+                <td><strong>R11</strong></td>
+                <td><span class="badge badge-amber">Financial</span></td>
+                <td>Delayed Clean-Tech Grant Disbursements or Subsidies</td>
+                <td>2</td>
+                <td>3</td>
+                <td><strong>6</strong></td>
+                <td><span class="badge badge-mint">Medium</span></td>
+                <td>Finance Lead</td>
+                <td>Monthly</td>
+              </tr>
+              <tr class="risk-register-row" data-risk-cat="Operational">
+                <td><strong>R12</strong></td>
+                <td><span class="badge badge-sage">Operational</span></td>
+                <td>In-Transit Freight Vibration Damage to Solar Inverters</td>
+                <td>2</td>
+                <td>3</td>
+                <td><strong>6</strong></td>
+                <td><span class="badge badge-mint">Medium</span></td>
+                <td>Logistics Manager</td>
+                <td>Monthly</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ACADEMIC SECTION 6: TOP 6 PRIORITIZED MITIGATION ROADMAP -->
+      <section id="top6" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">6</span>
+          <span>Top 6 Prioritized Risks: Mitigation, Contingency & Triggers</span>
+        </h3>
+        <p style="font-size:0.875rem; color:var(--color-slate); margin-bottom:var(--space-lg);">
+          As required by step 4 of the laboratory procedure, every top-tier risk (Score &ge; 12) is detailed with proactive mitigation, reactive contingency, early-warning trigger indicators, and assigned organizational roles:
+        </p>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:var(--space-lg);">
+          <!-- Top Risk 1 -->
+          <div class="card" style="border-left:4px solid var(--color-red);">
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+              <strong style="color:var(--color-red);">Rank 1 | Score 20 (P:4, I:5)</strong>
+              <span class="badge badge-sage">Operational</span>
+            </div>
+            <h4 style="font-size:1.1rem; margin-bottom:var(--space-xs);">R1: Critical LFP Battery Cell Supply Delay</h4>
+            <div style="font-size:0.8125rem; display:flex; flex-direction:column; gap:6px; margin:8px 0;">
+              <div><strong>Proactive Mitigation:</strong> Execute dual-source off-take contract with certified secondary supplier; maintain 45-day regional safety stock buffer.</div>
+              <div><strong>Contingency Plan:</strong> Authorize emergency air freight allocation; trigger pre-negotiated priority slot with domestic cell refabricator.</div>
+              <div style="background:var(--color-cream-subtle); padding:6px; border-radius:4px; font-weight:600; color:var(--color-forest);">
+                🚨 Trigger Metric: Supplier lead time notification exceeding 12 weeks.
+              </div>
+            </div>
+            <div style="font-size:0.75rem; color:var(--color-slate-light); border-top:var(--border-subtle); padding-top:6px; display:flex; justify-content:space-between;">
+              <span>Owner: Head of Operations</span>
+              <span>Review: Bi-Weekly</span>
+            </div>
+          </div>
+
+          <!-- Top Risk 2 -->
+          <div class="card" style="border-left:4px solid var(--color-amber);">
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+              <strong style="color:var(--color-amber);">Rank 2 | Score 16 (P:4, I:4)</strong>
+              <span class="badge badge-amber">Financial</span>
+            </div>
+            <h4 style="font-size:1.1rem; margin-bottom:var(--space-xs);">R2: Working Capital Cash Flow Crunch</h4>
+            <div style="font-size:0.8125rem; display:flex; flex-direction:column; gap:6px; margin:8px 0;">
+              <div><strong>Proactive Mitigation:</strong> Secure $2.5M revolving bank credit facility; structure 50% upfront deposits on commercial contracts.</div>
+              <div><strong>Contingency Plan:</strong> Draw down revolving working capital line; defer non-critical capital expenditures.</div>
+              <div style="background:var(--color-cream-subtle); padding:6px; border-radius:4px; font-weight:600; color:var(--color-forest);">
+                🚨 Trigger Metric: Cash runway dropping below 4.5 months of operational burn.
+              </div>
+            </div>
+            <div style="font-size:0.75rem; color:var(--color-slate-light); border-top:var(--border-subtle); padding-top:6px; display:flex; justify-content:space-between;">
+              <span>Owner: VP Finance / CFO</span>
+              <span>Review: Weekly</span>
+            </div>
+          </div>
+
+          <!-- Top Risk 3 -->
+          <div class="card" style="border-left:4px solid var(--color-amber);">
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+              <strong style="color:var(--color-amber);">Rank 3 | Score 15 (P:3, I:5)</strong>
+              <span class="badge badge-blue">Regulatory</span>
+            </div>
+            <h4 style="font-size:1.1rem; margin-bottom:var(--space-xs);">R3: Grid Interconnection Certification Delays</h4>
+            <div style="font-size:0.8125rem; display:flex; flex-direction:column; gap:6px; margin:8px 0;">
+              <div><strong>Proactive Mitigation:</strong> Pre-compliance testing at accredited third-party laboratories; engage regional utility standards taskforce.</div>
+              <div><strong>Contingency Plan:</strong> Offer islanded off-grid mode firmware configuration while grid-tie certification is processed.</div>
+              <div style="background:var(--color-cream-subtle); padding:6px; border-radius:4px; font-weight:600; color:var(--color-forest);">
+                🚨 Trigger Metric: Standards body review cycle exceeding 90 days without audit date.
+              </div>
+            </div>
+            <div style="font-size:0.75rem; color:var(--color-slate-light); border-top:var(--border-subtle); padding-top:6px; display:flex; justify-content:space-between;">
+              <span>Owner: Regulatory & Compliance Lead</span>
+              <span>Review: Monthly</span>
+            </div>
+          </div>
+
+          <!-- Top Risk 4 -->
+          <div class="card" style="border-left:4px solid var(--color-amber);">
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+              <strong style="color:var(--color-amber);">Rank 4 | Score 12 (P:4, I:3)</strong>
+              <span class="badge badge-sage">Market</span>
+            </div>
+            <h4 style="font-size:1.1rem; margin-bottom:var(--space-xs);">R4: Aggressive Competitor OEM Price War</h4>
+            <div style="font-size:0.8125rem; display:flex; flex-direction:column; gap:6px; margin:8px 0;">
+              <div><strong>Proactive Mitigation:</strong> Differentiate with Solvanta OS smart telemetry, 99.4% uptime SLA, and circular battery buyback guarantee.</div>
+              <div><strong>Contingency Plan:</strong> Launch zero-capex Energy-as-a-Service (EaaS) leasing model to remove upfront purchasing barriers.</div>
+              <div style="background:var(--color-cream-subtle); padding:6px; border-radius:4px; font-weight:600; color:var(--color-forest);">
+                🚨 Trigger Metric: Competitor discount margin exceeding 20% on tier-1 bids.
+              </div>
+            </div>
+            <div style="font-size:0.75rem; color:var(--color-slate-light); border-top:var(--border-subtle); padding-top:6px; display:flex; justify-content:space-between;">
+              <span>Owner: Chief Commercial Officer</span>
+              <span>Review: Monthly</span>
+            </div>
+          </div>
+
+          <!-- Top Risk 5 -->
+          <div class="card" style="border-left:4px solid var(--color-amber);">
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+              <strong style="color:var(--color-amber);">Rank 5 | Score 12 (P:3, I:4)</strong>
+              <span class="badge badge-academic">Organisational</span>
+            </div>
+            <h4 style="font-size:1.1rem; margin-bottom:var(--space-xs);">R5: Shortage of Battery Firmware Engineers</h4>
+            <div style="font-size:0.8125rem; display:flex; flex-direction:column; gap:6px; margin:8px 0;">
+              <div><strong>Proactive Mitigation:</strong> Competitive equity compensation; university clean-tech partnerships; structured onboarding accelerator.</div>
+              <div><strong>Contingency Plan:</strong> Retain pre-vetted specialized embedded firmware engineering consultancy for surge capacity.</div>
+              <div style="background:var(--color-cream-subtle); padding:6px; border-radius:4px; font-weight:600; color:var(--color-forest);">
+                🚨 Trigger Metric: Key technical engineering vacancies open for &gt; 60 days.
+              </div>
+            </div>
+            <div style="font-size:0.75rem; color:var(--color-slate-light); border-top:var(--border-subtle); padding-top:6px; display:flex; justify-content:space-between;">
+              <span>Owner: Head of People & Culture</span>
+              <span>Review: Monthly</span>
+            </div>
+          </div>
+
+          <!-- Top Risk 6 -->
+          <div class="card" style="border-left:4px solid var(--color-amber);">
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+              <strong style="color:var(--color-amber);">Rank 6 | Score 12 (P:3, I:4)</strong>
+              <span class="badge badge-sage">Operational</span>
+            </div>
+            <h4 style="font-size:1.1rem; margin-bottom:var(--space-xs);">R6: Quality Defect in Contract Mfg Batch</h4>
+            <div style="font-size:0.8125rem; display:flex; flex-direction:column; gap:6px; margin:8px 0;">
+              <div><strong>Proactive Mitigation:</strong> Deploy full-time Solvanta QA engineer on-site at contract facility; mandate Automated Optical Inspection (AOI).</div>
+              <div><strong>Contingency Plan:</strong> Halt batch dispatch; isolate affected lot numbers via digital component serial tracking.</div>
+              <div style="background:var(--color-cream-subtle); padding:6px; border-radius:4px; font-weight:600; color:var(--color-forest);">
+                🚨 Trigger Metric: First-pass manufacturing yield falling below 96.5%.
+              </div>
+            </div>
+            <div style="font-size:0.75rem; color:var(--color-slate-light); border-top:var(--border-subtle); padding-top:6px; display:flex; justify-content:space-between;">
+              <span>Owner: Lead Quality Engineer</span>
+              <span>Review: Weekly</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACADEMIC SECTION 7: EVALUATION CRITERIA -->
+      <section id="evaluation" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">7</span>
+          <span>Evaluation Criteria (Total 10 Marks)</span>
+        </h3>
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Marks</th>
+                <th>Evaluation Standard</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Conceptual Clarity</strong></td>
+                <td>2.0 Marks</td>
+                <td>Rigorous classification of scaling risks and correct application of probability-impact scoring math.</td>
+              </tr>
+              <tr>
+                <td><strong>Analytical Depth</strong></td>
+                <td>2.0 Marks</td>
+                <td>Comprehensiveness of 12 brainstormed risks and logical prioritization of top-tier threats.</td>
+              </tr>
+              <tr>
+                <td><strong>Feasibility & Practicality</strong></td>
+                <td>2.0 Marks</td>
+                <td>Actionable mitigation and contingency plans with measurable, realistic early-warning triggers.</td>
+              </tr>
+              <tr>
+                <td><strong>Presentation & Documentation</strong></td>
+                <td>2.0 Marks</td>
+                <td>Clean 5×5 matrix visualization, structured Annexure E risk register, and clear role ownership assignment.</td>
+              </tr>
+              <tr>
+                <td><strong>Timeliness</strong></td>
+                <td>2.0 Marks</td>
+                <td>Punctual lab submission conforming to all course instructions.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Activity Pagination -->
+      <div class="activity-pagination">
+        <a href="activity-4.html" class="pagination-btn">
+          <span class="pagination-label">Previous Challenge</span>
+          <span class="pagination-title">← Exercise 4: Financial Projections</span>
+        </a>
+
+        <div style="text-align:center;">
+          <span class="badge badge-academic">Exercise 5 of 7</span>
+        </div>
+
+        <a href="activity-6.html" class="pagination-btn" style="text-align:right;">
+          <span class="pagination-label">Next Challenge</span>
+          <span class="pagination-title">Exercise 6: ESG Dashboard →</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="academic-attribution">
+          <strong>Academic Simulation Notice:</strong> ScaleWise is an educational simulation based on the <em>Startup Sustainability & Scalability Lab</em> curriculum.
+        </div>
+        <div>&copy; ScaleWise Lab Simulation.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/activities.js"></script>
+</body>
+</html>

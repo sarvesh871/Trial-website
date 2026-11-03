@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 7: Team and Culture Scaling Exercise | ScaleWise</title>
+  <meta name="description" content="Exercise 7: Team and Culture Scaling Exercise. Scale organizational structure from 10 to 100+ employees, manage Dunbar threshold transitions, and codify culture.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/activities.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="ScaleWise Home">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">ScaleWise</span>
+          <span class="brand-sub">Sustainability Lab</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="founder-brief.html">Founder's Brief</a></li>
+          <li class="nav-item"><a href="hub.html" class="active">Activity Hub</a></li>
+          <li class="nav-item"><a href="toolkit.html">Toolkit</a></li>
+          <li class="nav-item"><a href="dashboard.html">Growth Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="dashboard.html" class="nav-progress-pill" title="View your simulation progress">
+          <span class="progress-pill-dot"></span>
+          <span class="nav-progress-text">0/7 Done</span>
+          <span class="nav-progress-percent" style="color:var(--color-slate-light); font-weight:400; font-size:0.75rem;">(0%)</span>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="founder-brief.html">Founder's Brief</a></li>
+      <li><a href="hub.html" class="active">Activity Hub (7 Challenges)</a></li>
+      <li><a href="toolkit.html">Sustainability Toolkit</a></li>
+      <li><a href="dashboard.html">Growth Dashboard</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Activity Top Banner -->
+    <section class="activity-header-bar">
+      <div class="container">
+        <div class="activity-header-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="hub.html">Activity Hub</a>
+          <span>/</span>
+          <span>Exercise 7</span>
+        </div>
+        <div class="activity-headline-wrap">
+          <div class="activity-headline-left">
+            <span class="badge badge-mint" style="margin-bottom:8px;">Organizational Design & Culture</span>
+            <h1>Exercise 7: Team & Culture Scaling Exercise</h1>
+            <p>
+              Develop a role-based hiring roadmap and culture preservation plan as Solvanta scales its workforce from 10 to 100+ employees across business growth milestones.
+            </p>
+          </div>
+          <div class="activity-header-actions">
+            <button class="btn btn-outline" data-toggle-complete="activity-7">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Mark as Completed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sub-navigation -->
+    <div class="activity-nav-subbar">
+      <div class="container">
+        <ul class="subbar-nav-list">
+          <li><a href="#simulation" class="active">Interactive Org Hierarchy</a></li>
+          <li><a href="#objective">Objective & Outcomes</a></li>
+          <li><a href="#theory">Background Theory</a></li>
+          <li><a href="#procedure">Procedure & Tasks</a></li>
+          <li><a href="#roadmap">Hiring Roadmap & Annexure G</a></li>
+          <li><a href="#culturerisks">Culture Risks & Mitigations</a></li>
+          <li><a href="#evaluation">Evaluation Criteria</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container workspace-layout">
+
+      <!-- INTERACTIVE SIMULATION: ORGANIZATIONAL GROWTH STAGES -->
+      <section id="simulation" class="interactive-simulation-box">
+        <span class="simulation-badge">Interactive Simulation 07</span>
+        <div class="simulation-header">
+          <h3>Interactive Organizational Hierarchy & Dunbar Threshold Visualizer</h3>
+          <p>
+            Growing from a 10-person founding squad to 100+ team members changes an organization qualitatively. Select each headcount milestone below to inspect how reporting lines, functional departments, management layers, and hiring priorities transform.
+          </p>
+        </div>
+
+        <!-- Stage Switcher Tabs: 10, 25, 50, 100+ -->
+        <div class="org-stage-selector">
+          <div class="org-stage-card active" data-org-size="10">
+            <div class="org-stage-count">~10 People</div>
+            <div class="org-stage-phase">Seed Founding Core</div>
+          </div>
+          <div class="org-stage-card" data-org-size="25">
+            <div class="org-stage-count">25 People</div>
+            <div class="org-stage-phase">Series A Initial</div>
+          </div>
+          <div class="org-stage-card" data-org-size="50">
+            <div class="org-stage-count">50 People</div>
+            <div class="org-stage-phase">Series A Expansion</div>
+          </div>
+          <div class="org-stage-card" data-org-size="100">
+            <div class="org-stage-count">100+ People</div>
+            <div class="org-stage-phase">Series B Enterprise</div>
+          </div>
+        </div>
+
+        <!-- Dynamic Stage Meta Header -->
+        <div style="background:var(--color-sage-tint); border:1px solid var(--color-sage-subtle); border-radius:var(--radius-md); padding:var(--space-md); margin-bottom:var(--space-lg);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:var(--space-sm); border-bottom:1px solid rgba(0,0,0,0.06); padding-bottom:8px; margin-bottom:8px;">
+            <h4 id="org-stage-name" style="margin:0; font-size:1.15rem; color:var(--color-forest-dark);">
+              10 Team Members — Seed / Founding Core
+            </h4>
+            <div style="display:flex; gap:12px; font-size:0.8125rem;">
+              <span><strong>Layers:</strong> <span id="org-stage-layers">1 Management Layer</span></span>
+              <span><strong>Hiring Focus:</strong> <span id="org-stage-priority">Generalist Problem-Solvers</span></span>
+            </div>
+          </div>
+          <p id="org-stage-desc" style="font-size:0.875rem; color:var(--color-slate); margin:0;">
+            Flat, founder-led hierarchy with informal communication and high generalist flexibility. Everyone wears multiple hats.
+          </p>
+          <div style="margin-top:6px; font-size:0.8125rem; color:var(--color-forest); font-weight:600;">
+            🧠 <strong>Dunbar Threshold Insight:</strong> <span id="org-stage-dunbar">Well below Dunbar number; informal daily scrums and implicit shared values suffice.</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Org Chart Wrapper -->
+        <div class="org-tree-wrapper">
+          <!-- Top Executive Node -->
+          <div class="org-node-ceo">
+            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--color-mint-light);">Executive Office</div>
+            <div style="font-size:1.1rem; font-weight:700;">Co-Founders (CEO & CTO)</div>
+            <div style="font-size:0.75rem; color:var(--color-sage-subtle); margin-top:2px;">Strategy, IP Architecture & Mission Custodians</div>
+          </div>
+
+          <!-- Dynamic Departments Row populated by activities.js -->
+          <div id="org-depts-container" class="org-departments-row">
+            <!-- Populated dynamically via activities.js -->
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; color:var(--color-slate-light);">
+          <span>* Green borders indicate new specialist scale-up roles introduced at this milestone</span>
+          <span>Click stages above to observe organizational evolution</span>
+        </div>
+
+      </section>
+
+      <!-- ACADEMIC SECTION 1: OBJECTIVE & OUTCOMES -->
+      <section id="objective" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">1</span>
+          <span>Objective & Learning Outcomes</span>
+        </h3>
+        <p><strong>Objective:</strong> To develop a hiring and culture plan that enables a startup to scale its team from approximately 10 employees to 100+ while preserving organisational culture and effectiveness.</p>
+        
+        <h4 style="margin-top:var(--space-md); margin-bottom:var(--space-xs); font-size:1.05rem;">Learning Outcomes</h4>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px;">
+          <li>Design a role-based hiring roadmap aligned to business growth milestones.</li>
+          <li>Identify culture risks that emerge during rapid headcount growth.</li>
+          <li>Propose structures and practices (onboarding, communication, values reinforcement) that preserve culture at scale.</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 2: BACKGROUND / THEORY -->
+      <section id="theory" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">2</span>
+          <span>Background / Theory</span>
+        </h3>
+        <p>
+          Growing from a 10-person founding team to 100+ employees changes an organisation qualitatively, not just numerically — informal coordination breaks down, culture that was 'lived' by founders must be deliberately codified, and management layers become necessary. This exercise applies:
+        </p>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px; margin:var(--space-sm) 0;">
+          <li><strong>Dunbar’s Number Thresholds:</strong> Cognitive limits on direct social relationships (~15 for intimate trust, ~50 for informal coordination, ~150 for mutual recognition). Beyond 50 employees, informal hallway alignment fails.</li>
+          <li><strong>Culture Codification Concept:</strong> Translating implicit founder values into written operational guidelines, performance criteria, and onboarding rituals before rapid hiring dilutes the company's core mission.</li>
+          <li><strong>Generalist to Specialist Transition:</strong> Moving from early generalist problem-solvers (who wear multiple hats) to disciplined functional specialists with deep domain mastery (QA automation, compliance, logistics).</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 3: MATERIALS REQUIRED -->
+      <section class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">3</span>
+          <span>Materials / Resources Required</span>
+        </h3>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px;">
+          <li><strong>Organisational design template:</strong> Prescribed in <em>Annexure G</em>.</li>
+          <li><strong>Sample hiring roadmap template:</strong> Role profiles, headcount allocations, and milestone mapping.</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 4: PROCEDURE / TASKS -->
+      <section id="procedure" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">4</span>
+          <span>Procedure / Tasks</span>
+        </h3>
+        <ol class="task-list">
+          <li class="task-item">
+            <span class="task-num-circle">1</span>
+            <div class="task-content">
+              <strong>Define current team structure:</strong>
+              Using the chosen startup (Solvanta), define current team structure (roles, reporting lines) at ~10 employees.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">2</span>
+            <div class="task-content">
+              <strong>Define target headcount across 3 milestones:</strong>
+              Define target functional areas and headcount at three milestones: <em>25, 50, and 100+ employees</em>, mapped to business milestones (e.g., new product line, new market, production scale-up).
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">3</span>
+            <div class="task-content">
+              <strong>Specify critical roles & profiles:</strong>
+              For each milestone, specify the critical roles to hire, required skill profiles, and whether hires are generalist or specialist.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">4</span>
+            <div class="task-content">
+              <strong>Identify at least four culture risks:</strong>
+              Identify at least four culture risks associated with rapid scaling (e.g., loss of informal communication, dilution of founding values, inconsistent decision-making, onboarding overload).
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">5</span>
+            <div class="task-content">
+              <strong>Propose concrete mitigations:</strong>
+              E.g., a documented culture handbook, structured onboarding programme, manager training, regular all-hands practices, and feedback mechanisms.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">6</span>
+            <div class="task-content">
+              <strong>Summarise scaling roadmap:</strong>
+              Summarise the complete plan as an organisational scaling roadmap with a timeline.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ACADEMIC SECTION 5: DELIVERABLES & ANNEXURE G ROADMAP -->
+      <section id="roadmap" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">5</span>
+          <span>Deliverables / Submission (Annexure G Hiring Roadmap)</span>
+        </h3>
+        
+        <p>Your lab submission must contain:</p>
+        <ul style="padding-left:20px; color:var(--color-slate); margin-bottom:var(--space-md); display:flex; flex-direction:column; gap:4px;">
+          <li>Organisation charts at 10 / 25 / 50 / 100+ employees.</li>
+          <li>Hiring roadmap mapped to business milestones.</li>
+          <li>Culture risk list with concrete mitigation strategies.</li>
+          <li>Organisational scaling roadmap document.</li>
+        </ul>
+
+        <h4 style="margin:var(--space-lg) 0 var(--space-xs); font-size:1.1rem; color:var(--color-forest-dark);">
+          Annexure G: Milestone-Based Hiring & Headcount Allocation
+        </h4>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Headcount Milestone</th>
+                <th>Business Trigger / Milestone</th>
+                <th>Critical Roles to Hire</th>
+                <th>Skill Profile</th>
+                <th>Generalist vs. Specialist</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Milestone 1 (~10)</strong></td>
+                <td>Pilot validation; 120 units deployed in field.</td>
+                <td>Founding engineers, full-stack dev, pilot tech.</td>
+                <td>Hardware/firmware integration, rapid prototyping.</td>
+                <td><span class="badge badge-amber">100% Generalist</span></td>
+              </tr>
+              <tr>
+                <td><strong>Milestone 2 (25)</strong></td>
+                <td>Series A closing; CM factory onboarding; 500 u/yr.</td>
+                <td>QA Automation Lead, CM Sourcing Manager, 3PL Coordinator, Field Service Engineers.</td>
+                <td>Automated Optical Inspection, ISO 9001/14001, supplier contracts, high-voltage safety.</td>
+                <td><span class="badge badge-blue">60% Specialist / 40% Generalist</span></td>
+              </tr>
+              <tr>
+                <td><strong>Milestone 3 (50)</strong></td>
+                <td>Multi-region commercial rollout; 3,000 u/yr.</td>
+                <td>Director of People, Battery Chemist, Legal Regulatory Counsel, Regional Channel Managers.</td>
+                <td>Mid-level engineering management, cell degradation analytics, grid-tie certifications.</td>
+                <td><span class="badge badge-mint">85% Specialist / 15% Generalist</span></td>
+              </tr>
+              <tr>
+                <td><strong>Milestone 4 (100+)</strong></td>
+                <td>Series B scale; international market entry; 25k u/yr.</td>
+                <td>VP Global Supply, VP ESG, Regional Managing Directors, Automated Assembly Robotics Leads.</td>
+                <td>Executive-level P&L stewardship, closed-loop hydrometallurgical recycling oversight.</td>
+                <td><span class="badge badge-forest">95% Specialist / 5% Generalist</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ACADEMIC SECTION 6: CULTURE RISKS & CONCRETE MITIGATIONS -->
+      <section id="culturerisks" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">6</span>
+          <span>Four Culture Scaling Risks & Concrete Mitigations</span>
+        </h3>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:var(--space-lg); margin-top:var(--space-md);">
+          <!-- Risk 1 -->
+          <div class="card" style="border-top:3px solid var(--color-amber);">
+            <div style="font-size:0.75rem; font-weight:700; color:var(--color-amber); text-transform:uppercase;">Culture Risk 01</div>
+            <h4 style="font-size:1.05rem; margin:4px 0 8px;">Loss of Informal Communication</h4>
+            <p style="font-size:0.8125rem; color:var(--color-slate); margin-bottom:12px;">
+              Information shared organically around coffee machines fails to reach remote field teams and new hires, causing functional blindness.
+            </p>
+            <div style="background:var(--color-sage-tint); padding:10px; border-radius:var(--radius-sm); font-size:0.8125rem;">
+              <strong style="color:var(--color-forest-dark);">Concrete Mitigation:</strong>
+              Codified asynchronous communication norms, bi-weekly virtual town halls with open Q&A, and centralized documentation in a company wiki.
+            </div>
+          </div>
+
+          <!-- Risk 2 -->
+          <div class="card" style="border-top:3px solid var(--color-amber);">
+            <div style="font-size:0.75rem; font-weight:700; color:var(--color-amber); text-transform:uppercase;">Culture Risk 02</div>
+            <h4 style="font-size:1.05rem; margin:4px 0 8px;">Dilution of Founding Values</h4>
+            <p style="font-size:0.8125rem; color:var(--color-slate); margin-bottom:12px;">
+              Rapid hiring brings employees who treat Solvanta as a standard corporate job, losing the founding obsession with clean-tech sustainability.
+            </p>
+            <div style="background:var(--color-sage-tint); padding:10px; border-radius:var(--radius-sm); font-size:0.8125rem;">
+              <strong style="color:var(--color-forest-dark);">Concrete Mitigation:</strong>
+              Documented <em>Solvanta Culture Playbook</em>; values-based behavioral interview rubrics; founder-led session during week one of onboarding.
+            </div>
+          </div>
+
+          <!-- Risk 3 -->
+          <div class="card" style="border-top:3px solid var(--color-amber);">
+            <div style="font-size:0.75rem; font-weight:700; color:var(--color-amber); text-transform:uppercase;">Culture Risk 03</div>
+            <h4 style="font-size:1.05rem; margin:4px 0 8px;">Inconsistent Management Styles</h4>
+            <p style="font-size:0.8125rem; color:var(--color-slate); margin-bottom:12px;">
+              First-time managers hired externally apply divergent, micromanaging, or opaque leadership habits, creating employee discontent.
+            </p>
+            <div style="background:var(--color-sage-tint); padding:10px; border-radius:var(--radius-sm); font-size:0.8125rem;">
+              <strong style="color:var(--color-forest-dark);">Concrete Mitigation:</strong>
+              Mandatory internal "First-Time Manager Academy", standardized 1-on-1 coaching frameworks, and quarterly anonymous 360-degree upward reviews.
+            </div>
+          </div>
+
+          <!-- Risk 4 -->
+          <div class="card" style="border-top:3px solid var(--color-amber);">
+            <div style="font-size:0.75rem; font-weight:700; color:var(--color-amber); text-transform:uppercase;">Culture Risk 04</div>
+            <h4 style="font-size:1.05rem; margin:4px 0 8px;">Onboarding Overload & Burnout</h4>
+            <p style="font-size:0.8125rem; color:var(--color-slate); margin-bottom:12px;">
+              Existing senior engineers spend 50% of their working hours answering repetitive basic questions, stalling core technical product delivery.
+            </p>
+            <div style="background:var(--color-sage-tint); padding:10px; border-radius:var(--radius-sm); font-size:0.8125rem;">
+              <strong style="color:var(--color-forest-dark);">Concrete Mitigation:</strong>
+              Structured 30-60-90 day onboarding curriculum, dedicated peer "culture buddies", and self-serve interactive technical walkthroughs.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACADEMIC SECTION 7: EVALUATION CRITERIA -->
+      <section id="evaluation" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">7</span>
+          <span>Evaluation Criteria (Total 10 Marks)</span>
+        </h3>
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Marks</th>
+                <th>Evaluation Standard</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Conceptual Clarity</strong></td>
+                <td>2.0 Marks</td>
+                <td>Understanding of organizational design frameworks, Dunbar thresholds, and culture codification.</td>
+              </tr>
+              <tr>
+                <td><strong>Analytical Depth</strong></td>
+                <td>2.0 Marks</td>
+                <td>Logical headcount progression mapped to commercial milestones across 10 / 25 / 50 / 100+ stages.</td>
+              </tr>
+              <tr>
+                <td><strong>Feasibility & Practicality</strong></td>
+                <td>2.0 Marks</td>
+                <td>Actionability of generalist-to-specialist transition and concrete, resourced culture mitigations.</td>
+              </tr>
+              <tr>
+                <td><strong>Presentation & Documentation</strong></td>
+                <td>2.0 Marks</td>
+                <td>Clear hierarchy charts, formatted Annexure G roadmap tables, and thorough executive documentation.</td>
+              </tr>
+              <tr>
+                <td><strong>Timeliness</strong></td>
+                <td>2.0 Marks</td>
+                <td>Punctual lab submission conforming to all course instructions.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Activity Pagination -->
+      <div class="activity-pagination">
+        <a href="activity-6.html" class="pagination-btn">
+          <span class="pagination-label">Previous Challenge</span>
+          <span class="pagination-title">← Exercise 6: ESG Dashboard</span>
+        </a>
+
+        <div style="text-align:center;">
+          <span class="badge badge-academic">Exercise 7 of 7 (Final Lab)</span>
+        </div>
+
+        <a href="dashboard.html" class="pagination-btn" style="text-align:right;">
+          <span class="pagination-label">Finish Lab</span>
+          <span class="pagination-title">Open Growth Dashboard →</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="academic-attribution">
+          <strong>Academic Simulation Notice:</strong> ScaleWise is an educational simulation based on the <em>Startup Sustainability & Scalability Lab</em> curriculum.
+        </div>
+        <div>&copy; ScaleWise Lab Simulation.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/activities.js"></script>
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3: Supply Chain and Operations Scaling Plan | ScaleWise</title>
+  <meta name="description" content="Exercise 3: Supply Chain and Operations Scaling Plan. Map end-to-end clean-tech hardware supply chains, volume breakpoints, and circular reverse logistics.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/activities.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="ScaleWise Home">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">ScaleWise</span>
+          <span class="brand-sub">Sustainability Lab</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="founder-brief.html">Founder's Brief</a></li>
+          <li class="nav-item"><a href="hub.html" class="active">Activity Hub</a></li>
+          <li class="nav-item"><a href="toolkit.html">Toolkit</a></li>
+          <li class="nav-item"><a href="dashboard.html">Growth Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="dashboard.html" class="nav-progress-pill" title="View your simulation progress">
+          <span class="progress-pill-dot"></span>
+          <span class="nav-progress-text">0/7 Done</span>
+          <span class="nav-progress-percent" style="color:var(--color-slate-light); font-weight:400; font-size:0.75rem;">(0%)</span>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="founder-brief.html">Founder's Brief</a></li>
+      <li><a href="hub.html" class="active">Activity Hub (7 Challenges)</a></li>
+      <li><a href="toolkit.html">Sustainability Toolkit</a></li>
+      <li><a href="dashboard.html">Growth Dashboard</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Activity Top Banner -->
+    <section class="activity-header-bar">
+      <div class="container">
+        <div class="activity-header-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="hub.html">Activity Hub</a>
+          <span>/</span>
+          <span>Exercise 3</span>
+        </div>
+        <div class="activity-headline-wrap">
+          <div class="activity-headline-left">
+            <span class="badge badge-mint" style="margin-bottom:8px;">Operations & Logistics Scaling</span>
+            <h1>Exercise 3: Supply Chain & Operations Scaling Plan</h1>
+            <p>
+              Develop a scalable supply chain and operations strategy with explicit sustainability interventions across Pilot, Scale-up, and Mass Production.
+            </p>
+          </div>
+          <div class="activity-header-actions">
+            <button class="btn btn-outline" data-toggle-complete="activity-3">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Mark as Completed</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sub-navigation -->
+    <div class="activity-nav-subbar">
+      <div class="container">
+        <ul class="subbar-nav-list">
+          <li><a href="#simulation" class="active">Supply Chain & Breakpoints</a></li>
+          <li><a href="#objective">Objective & Outcomes</a></li>
+          <li><a href="#theory">Background Theory</a></li>
+          <li><a href="#procedure">Procedure & Tasks</a></li>
+          <li><a href="#roadmap">Phased Roadmap & Annexure C</a></li>
+          <li><a href="#evaluation">Evaluation Criteria</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container workspace-layout">
+
+      <!-- INTERACTIVE SIMULATION: SUPPLY CHAIN STAGES & BREAKPOINTS -->
+      <section id="simulation" class="interactive-simulation-box">
+        <span class="simulation-badge">Interactive Simulation 03</span>
+        <div class="simulation-header">
+          <h3>Interactive Supply Chain & Volume Breakpoint Visualizer</h3>
+          <p>
+            Map Solvanta's physical operations from Tier-1 raw component sourcing to customer installation and end-of-life battery recycling. Click each node in the supply chain to reveal its scaling bottlenecks and green interventions.
+          </p>
+        </div>
+
+        <!-- 6-Stage Supply Chain Visual Flow -->
+        <div class="supply-stages-flow">
+          <div class="supply-node-card active" data-stage-key="supplier">
+            <div>
+              <span class="supply-node-num">Stage 01</span>
+              <h4 class="supply-node-title">Sourcing & Suppliers</h4>
+            </div>
+            <span class="supply-node-sub">Tier-1 & 2 BOM procurement</span>
+          </div>
+
+          <div class="supply-arrow">→</div>
+
+          <div class="supply-node-card" data-stage-key="manufacturing">
+            <div>
+              <span class="supply-node-num">Stage 02</span>
+              <h4 class="supply-node-title">Manufacturing</h4>
+            </div>
+            <span class="supply-node-sub">Sub-assembly & integration</span>
+          </div>
+
+          <div class="supply-arrow">→</div>
+
+          <div class="supply-node-card" data-stage-key="qc">
+            <div>
+              <span class="supply-node-num">Stage 03</span>
+              <h4 class="supply-node-title">Quality Control</h4>
+            </div>
+            <span class="supply-node-sub">Cycle testing & burn-in</span>
+          </div>
+
+          <div class="supply-arrow">→</div>
+
+          <div class="supply-node-card" data-stage-key="warehousing">
+            <div>
+              <span class="supply-node-num">Stage 04</span>
+              <h4 class="supply-node-title">Warehousing</h4>
+            </div>
+            <span class="supply-node-sub">Buffer stock & hazmat</span>
+          </div>
+
+          <div class="supply-arrow">→</div>
+
+          <div class="supply-node-card" data-stage-key="distribution">
+            <div>
+              <span class="supply-node-num">Stage 05</span>
+              <h4 class="supply-node-title">Distribution</h4>
+            </div>
+            <span class="supply-node-sub">Freight logistics & dunnage</span>
+          </div>
+
+          <div class="supply-arrow">→</div>
+
+          <div class="supply-node-card" data-stage-key="customer">
+            <div>
+              <span class="supply-node-num">Stage 06</span>
+              <h4 class="supply-node-title">Customer & Take-Back</h4>
+            </div>
+            <span class="supply-node-sub">Field install & recycling</span>
+          </div>
+        </div>
+
+        <!-- Selected Node Inspector Box -->
+        <div style="background:#FFFFFF; border:1px solid var(--color-cream-border); border-radius:var(--radius-lg); padding:var(--space-xl); margin-bottom:var(--space-xl); box-shadow:var(--shadow-sm);">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:var(--space-md); border-bottom:1px solid var(--color-cream-border); padding-bottom:8px;">
+            <h4 id="stage-detail-title" style="margin:0; font-size:1.3rem; color:var(--color-forest-dark);">Tier-1 & Tier-2 Sourcing</h4>
+            <span class="badge badge-sage">Supply Chain Inspector</span>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-xl); margin-bottom:var(--space-md);">
+            <div>
+              <strong style="color:var(--color-slate); font-size:0.8125rem; text-transform:uppercase;">Baseline Operations (Pilot Scale)</strong>
+              <p id="stage-detail-current" style="font-size:0.875rem; margin-top:4px;">
+                Single-source imported LFP battery cells (16-week lead time), local recycled aluminum extrusions, commercial micro-inverter microchips.
+              </p>
+            </div>
+            <div>
+              <strong style="color:var(--color-amber); font-size:0.8125rem; text-transform:uppercase;">Identified Volume Breakpoint</strong>
+              <p id="stage-detail-bottleneck" style="font-size:0.875rem; margin-top:4px;">
+                Breakdown at >300 units/mo: cell supplier quota allocation fails; single-source shipping delays cascade into total assembly shutdown.
+              </p>
+            </div>
+          </div>
+
+          <div style="padding-top:var(--space-sm); border-top:1px dashed var(--color-cream-border);">
+            <strong style="color:var(--color-forest); font-size:0.8125rem; text-transform:uppercase;">Scalable Sustainable Intervention</strong>
+            <p id="stage-detail-sustainable" style="font-size:0.875rem; color:var(--color-forest-dark); margin-top:2px;">
+              Dual-sourced certified recycled aluminum; long-term off-take contract with domestic closed-loop LFP battery cell refabricator.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive Scaling Timeline: Pilot -> Scale-Up -> Mass Production -->
+        <h4 style="font-size:1.15rem; color:var(--color-forest-dark); margin-bottom:var(--space-md);">
+          Scaling Roadmap Phases (Click to Switch Operational Parameters)
+        </h4>
+
+        <div class="phase-timeline-container">
+          <div class="phase-step-card active" data-phase-key="pilot">
+            <span class="phase-badge">Phase 1</span>
+            <h5 class="phase-title">Pilot Production</h5>
+            <span class="phase-volume-tag">100 units / month</span>
+          </div>
+
+          <div class="phase-step-card" data-phase-key="scaleup">
+            <span class="phase-badge">Phase 2</span>
+            <h5 class="phase-title">Scale-Up Stage</h5>
+            <span class="phase-volume-tag">2,500 units / month</span>
+          </div>
+
+          <div class="phase-step-card" data-phase-key="mass">
+            <span class="phase-badge">Phase 3</span>
+            <h5 class="phase-title">Mass Production</h5>
+            <span class="phase-volume-tag">25,000 units / month</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Phase Content Panel -->
+        <div style="background:var(--color-cream-subtle); border:1px solid var(--color-cream-border); border-radius:var(--radius-lg); padding:var(--space-lg);">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:var(--space-md);">
+            <div>
+              <span id="phase-detail-badge" class="badge badge-forest" style="margin-bottom:4px;">Pilot Stage</span>
+              <h4 id="phase-detail-volume" style="font-size:1.2rem; margin:0;">100 units / month</h4>
+            </div>
+            <span style="font-size:0.8125rem; color:var(--color-slate-light);">Operations Strategy Matrix</span>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:var(--space-md);">
+            <div style="background:#FFFFFF; padding:var(--space-md); border-radius:var(--radius-md); border:var(--border-subtle);">
+              <strong style="font-size:0.75rem; text-transform:uppercase; color:var(--color-slate);">Sourcing Strategy</strong>
+              <p id="phase-detail-sourcing" style="font-size:0.8125rem; margin-top:4px;">Single-source raw materials, spot purchasing, localized vendors.</p>
+            </div>
+            <div style="background:#FFFFFF; padding:var(--space-md); border-radius:var(--radius-md); border:var(--border-subtle);">
+              <strong style="font-size:0.75rem; text-transform:uppercase; color:var(--color-slate);">Production Setup</strong>
+              <p id="phase-detail-production" style="font-size:0.8125rem; margin-top:4px;">Hybrid in-house pilot cell; manual wiring with semi-automated screw torque.</p>
+            </div>
+            <div style="background:#FFFFFF; padding:var(--space-md); border-radius:var(--radius-md); border:var(--border-subtle);">
+              <strong style="font-size:0.75rem; text-transform:uppercase; color:var(--color-slate);">Logistics & Transport</strong>
+              <p id="phase-detail-logistics" style="font-size:0.8125rem; margin-top:4px;">Direct LTL freight, centralized single regional warehouse.</p>
+            </div>
+            <div style="background:#FFFFFF; padding:var(--space-md); border-radius:var(--radius-md); border:var(--border-subtle);">
+              <strong style="font-size:0.75rem; text-transform:uppercase; color:var(--color-slate);">Inventory Model</strong>
+              <p id="phase-detail-inventory" style="font-size:0.8125rem; margin-top:4px;">High buffer stock (45 days) to mitigate supplier lead time spikes.</p>
+            </div>
+          </div>
+
+          <div style="margin-top:var(--space-md); background:#FFFFFF; padding:var(--space-md); border-radius:var(--radius-md); border-left:3px solid var(--color-mint);">
+            <strong style="font-size:0.8125rem; color:var(--color-forest-dark);">Sustainability Integration at this Phase:</strong>
+            <p id="phase-detail-sustainability" style="font-size:0.875rem; color:var(--color-slate); margin-top:2px;">
+              Initial material scrap tracking, manual sorting of packaging waste.
+            </p>
+          </div>
+        </div>
+
+        <!-- Three Sustainability Interventions Section -->
+        <div style="margin-top:var(--space-2xl);">
+          <h4 style="font-size:1.2rem; color:var(--color-forest-dark); margin-bottom:var(--space-sm);">
+            Three Embedded Sustainability Interventions
+          </h4>
+          <p style="font-size:0.875rem; color:var(--color-slate); margin-bottom:var(--space-md);">
+            As required by the lab syllabus, at least three circular interventions must be designed directly into the operations plan:
+          </p>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:var(--space-md);">
+            <div class="card" style="border-top:3px solid var(--color-mint);">
+              <h5 style="font-size:1rem; margin-bottom:6px;">1. Circular Recycled Material Sourcing</h5>
+              <p style="font-size:0.8125rem; color:var(--color-slate); margin:0;">
+                Transition PowerBlock external extrusions to 100% post-consumer recycled aluminum alloy (reducing embodied smelting energy by 95%), coupled with tier-2 conflict-free cobalt audit certification.
+              </p>
+            </div>
+
+            <div class="card" style="border-top:3px solid var(--color-mint);">
+              <h5 style="font-size:1rem; margin-bottom:6px;">2. Zero-Waste Returnable Dunnage</h5>
+              <p style="font-size:0.8125rem; color:var(--color-slate); margin:0;">
+                Eliminate 100% of single-use expanded polystyrene foam by adopting standardized rotomolded cellular shipping crates that circulate between certified installation contractors and regional 3PL hubs.
+              </p>
+            </div>
+
+            <div class="card" style="border-top:3px solid var(--color-mint);">
+              <h5 style="font-size:1rem; margin-bottom:6px;">3. QR Battery Passport & Take-Back</h5>
+              <p style="font-size:0.8125rem; color:var(--color-slate); margin:0;">
+                Every LFP module carries an immutable QR digital battery passport tracking cycle health. A $150 end-of-life core rebate incentivizes customers to return expired packs to certified hydrometallurgical recycling partners.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ACADEMIC SECTION 1: OBJECTIVE & OUTCOMES -->
+      <section id="objective" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">1</span>
+          <span>Objective & Learning Outcomes</span>
+        </h3>
+        <p><strong>Objective:</strong> To develop a scalable supply chain and operations strategy, with an explicit sustainability focus, for a product involving manufacturing, automotive components, or energy devices.</p>
+        
+        <h4 style="margin-top:var(--space-md); margin-bottom:var(--space-xs); font-size:1.05rem;">Learning Outcomes</h4>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px;">
+          <li>Map an end-to-end supply chain for the chosen product category.</li>
+          <li>Identify scaling constraints in sourcing, production, logistics, and inventory.</li>
+          <li>Design a phased operations scaling plan that embeds sustainability practices (e.g., green sourcing, waste reduction, reverse logistics).</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 2: BACKGROUND / THEORY -->
+      <section id="theory" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">2</span>
+          <span>Background / Theory</span>
+        </h3>
+        <p>
+          Operations that work at prototype or pilot scale frequently break down at 10x or 100x volume due to supplier capacity limits, quality-control bottlenecks, logistics costs, and inventory carrying costs. A sustainable scaling plan anticipates these breakpoints and designs around them using strategies such as <strong>dual sourcing</strong>, <strong>modular production cells</strong>, <strong>just-in-time (JIT) inventory</strong>, and <strong>circular material flows</strong>.
+        </p>
+      </section>
+
+      <!-- ACADEMIC SECTION 3: MATERIALS REQUIRED -->
+      <section class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">3</span>
+          <span>Materials / Resources Required</span>
+        </h3>
+        <ul style="padding-left:20px; color:var(--color-slate); display:flex; flex-direction:column; gap:6px;">
+          <li><strong>Product specification sheet:</strong> Chosen by student/team (e.g. Solvanta PowerBlock™ 5kWh Modular Storage).</li>
+          <li><strong>Supply chain mapping template:</strong> Prescribed in <em>Annexure C</em>.</li>
+          <li><strong>Reference data:</strong> Supplier lead times and capacities (approximate/assumed where unavailable).</li>
+        </ul>
+      </section>
+
+      <!-- ACADEMIC SECTION 4: PROCEDURE / TASKS -->
+      <section id="procedure" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">4</span>
+          <span>Procedure / Tasks</span>
+        </h3>
+        <ol class="task-list">
+          <li class="task-item">
+            <span class="task-num-circle">1</span>
+            <div class="task-content">
+              <strong>Select a product:</strong>
+              Involving manufacturing, an automotive component, or an energy device (e.g., a battery pack, an alternator, a solar micro-inverter) — ideally a product made by your chosen startup.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">2</span>
+            <div class="task-content">
+              <strong>Map the current/baseline supply chain:</strong>
+              Raw material sourcing, tier-1/tier-2 suppliers, production stages, warehousing, and distribution to end customer.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">3</span>
+            <div class="task-content">
+              <strong>Identify volume breakpoints:</strong>
+              Identify the production volume at which each stage becomes a bottleneck (capacity, quality, or cost) as demand scales from pilot to mass production.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">4</span>
+            <div class="task-content">
+              <strong>Design a scaling strategy:</strong>
+              Addressing sourcing (single vs. dual/multi-sourcing), production (in-house vs. contract manufacturing, automation level), logistics (warehousing network, transport mode), and inventory (JIT vs. buffer stock).
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">5</span>
+            <div class="task-content">
+              <strong>Embed at least three sustainability interventions:</strong>
+              E.g., recycled/low-carbon material sourcing, packaging reduction, reverse logistics/take-back scheme, renewable-powered facilities.
+            </div>
+          </li>
+          <li class="task-item">
+            <span class="task-num-circle">6</span>
+            <div class="task-content">
+              <strong>Present as a phased roadmap:</strong>
+              Present the plan as a phased roadmap (<em>Pilot → Scale-up → Mass Production</em>) with volume thresholds and corresponding operational changes at each phase.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ACADEMIC SECTION 5: DELIVERABLES & ANNEXURE C -->
+      <section id="roadmap" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">5</span>
+          <span>Deliverables / Submission (Annexure C Roadmap)</span>
+        </h3>
+        
+        <p>Your lab submission must contain:</p>
+        <ul style="padding-left:20px; color:var(--color-slate); margin-bottom:var(--space-md); display:flex; flex-direction:column; gap:4px;">
+          <li>Baseline supply chain map.</li>
+          <li>Bottleneck analysis identifying breakpoints by volume.</li>
+          <li>Phased scaling roadmap with embedded sustainability interventions.</li>
+        </ul>
+
+        <h4 style="margin:var(--space-lg) 0 var(--space-xs); font-size:1.1rem; color:var(--color-forest-dark);">
+          Annexure C: Complete Operational Scaling Matrix
+        </h4>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Operations Dimension</th>
+                <th>Phase 1: Pilot (100 u/mo)</th>
+                <th>Phase 2: Scale-Up (2,500 u/mo)</th>
+                <th>Phase 3: Mass Production (25,000 u/mo)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Sourcing Strategy</strong></td>
+                <td>Single vendor; spot cell purchases; 16-wk lead times.</td>
+                <td>Dual-sourcing for battery cells & BMS chips; 60-day vendor contracts.</td>
+                <td>Multi-regional procurement; long-term mineral off-take; local assembly kits.</td>
+              </tr>
+              <tr>
+                <td><strong>Production Setup</strong></td>
+                <td>1,200 sq ft garage; manual bench soldering (35 u/mo cap).</td>
+                <td>Contract Manufacturer (CM); automated cell welding & AOI testing.</td>
+                <td>Fully automated robotic line (ISO 9001/14001); lights-out cell assembly.</td>
+              </tr>
+              <tr>
+                <td><strong>Logistics & Freight</strong></td>
+                <td>Direct road freight; diesel LTL trucks; single warehouse.</td>
+                <td>Regional 3PL fulfillment depots; route optimization software.</td>
+                <td>Intermodal electric road + rail; localized regional distribution centers.</td>
+              </tr>
+              <tr>
+                <td><strong>Inventory Strategy</strong></td>
+                <td>45-day safety buffer due to high lead time risk.</td>
+                <td>Hybrid JIT for casings; 20-day safety stock for imported cells.</td>
+                <td>Vendor-Managed Inventory (VMI) with IoT real-time replenishment.</td>
+              </tr>
+              <tr>
+                <td><strong>Sustainability Focus</strong></td>
+                <td>Basic scrap sorting; virgin aluminum enclosure.</td>
+                <td>100% recycled aluminum; reusable returnable shipping crates.</td>
+                <td>Net-zero solar factory; 95% circular battery take-back hydrometallurgy.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ACADEMIC SECTION 6: EVALUATION CRITERIA -->
+      <section id="evaluation" class="academic-section">
+        <h3 class="academic-section-title">
+          <span class="section-num">6</span>
+          <span>Evaluation Criteria (Total 10 Marks)</span>
+        </h3>
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Criterion</th>
+                <th>Marks</th>
+                <th>Standard Evaluation Descriptor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Conceptual Clarity</strong></td>
+                <td>2.0 Marks</td>
+                <td>Accurate understanding of supply chain topologies, breakpoint dynamics, and circular operations.</td>
+              </tr>
+              <tr>
+                <td><strong>Analytical Depth</strong></td>
+                <td>2.0 Marks</td>
+                <td>Quantitative precision in identifying volume bottlenecks and lead-time constraints.</td>
+              </tr>
+              <tr>
+                <td><strong>Feasibility & Practicality</strong></td>
+                <td>2.0 Marks</td>
+                <td>Realistic multi-sourcing, contract manufacturing, and circular reverse logistics designs.</td>
+              </tr>
+              <tr>
+                <td><strong>Presentation & Documentation</strong></td>
+                <td>2.0 Marks</td>
+                <td>Clear stage visual diagrams, formatted roadmap tables, and rigorous deliverable reporting.</td>
+              </tr>
+              <tr>
+                <td><strong>Timeliness</strong></td>
+                <td>2.0 Marks</td>
+                <td>Prompt laboratory submission meeting all deadline requirements.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Activity Pagination -->
+      <div class="activity-pagination">
+        <a href="activity-2.html" class="pagination-btn">
+          <span class="pagination-label">Previous Challenge</span>
+          <span class="pagination-title">← Exercise 2: BMC Redesign</span>
+        </a>
+
+        <div style="text-align:center;">
+          <span class="badge badge-academic">Exercise 3 of 7</span>
+        </div>
+
+        <a href="activity-4.html" class="pagination-btn" style="text-align:right;">
+          <span class="pagination-label">Next Challenge</span>
+          <span class="pagination-title">Exercise 4: Financial Projections →</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="academic-attribution">
+          <strong>Academic Simulation Notice:</strong> ScaleWise is an educational simulation based on the <em>Startup Sustainability & Scalability Lab</em> curriculum.
+        </div>
+        <div>&copy; ScaleWise Lab Simulation.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/activities.js"></script>
+</body>
+</html>
